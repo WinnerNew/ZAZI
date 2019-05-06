@@ -1,0 +1,160 @@
+body{font-family: 'microsoft yahei',Arial,Helvetica, sans-serif; color: #2F2F2F;}
+a{transition: 0.5s;-webkit-transition: 0.5s;-moz-transition: 0.5s;}
+ul{list-style:none;}
+.fr{float: right;}
+.fl{float: left;}
+@media screen and (min-width: 769px) {
+    header{}
+    .logo{margin-top: 18px;}
+   .navbar{ margin-top:15px;  min-height: 50px;  border-bottom: 3px solid #01AF63;}
+   .navbar-nav > li{}
+   .navbar-nav > li:first-child { border-left:0; }
+   .navbar-nav > li:last-child{}
+   .navbar-nav > li > a {text-align: center;}
+   .navbar-default .navbar-nav > li > a{color: #434343; padding: 15px 34px 15px 34px;}
+   .navbar-default .navbar-nav > li > a:hover,
+   .navbar-default .navbar-nav > li > a:focus,
+   .navbar-default .navbar-nav > li > a.active,
+   .navbar-default .navbar-nav > .active > a,
+   .navbar-default .navbar-nav > .active > a:hover,
+   .navbar-default .navbar-nav > .open > a,
+   .navbar-default .navbar-nav > .open > a:hover,
+   .navbar-default .navbar-nav > .open > a:focus {
+      background-color: #01AF63; color: #fff; }
+   .navbar-brand{display: none;}
+
+   .nav_small{ background-color:#fff;  padding: 10px 0px; padding-bottom: 15px; border-radius: 0px; border: none; box-shadow: none;border-top: 3px solid #01AF63;}
+   .nav_small > li{}
+   .nav_small > li > a{line-height:20px; padding: 7px 0px; text-align: center; color: #434343; font-size: 13px;}
+   .nav_small > li > a:hover{color: #01AF63; background-color: #01AF63; color: #fff; }
+    #app_menudown,#small_search{ display:none; }
+   .index_left_nav,.footer_nav{display:none; }
+}
+
+
+/*小屏幕*/
+@media screen and (max-width: 768px) {
+    .top-wl{display: none;}
+   .navbar{min-height: 50px; margin-top:10px; background-color: #01AF63;}
+   .navbar-default .navbar-brand {color: #fff; font-size: 16px;}
+   .navbar-default .navbar-brand:hover,
+   .navbar-default .navbar-brand:focus {color: #fff;}
+   .navbar-toggle{border:none;}
+   .navbar-default .navbar-collapse, .navbar-default .navbar-form{border:none;}
+   .navbar-default .navbar-toggle:hover,
+   .navbar-default .navbar-toggle:focus {
+     background-color: #2ECA86;
+   }
+   .navbar-default .navbar-toggle .icon-bar{background-color: #fff;}
+   .navbar-default .navbar-nav{margin-top: 0px;margin-bottom: 0px;}
+   .navbar-default .navbar-nav > li {}
+   .navbar-default .navbar-nav > li:last-child{border: none;}
+   .navbar-default .navbar-nav > li > a,
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a{color: #fff;}
+   .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus,
+    .navbar-default .navbar-nav > .active > a, 
+    .navbar-default .navbar-nav > .active > a:hover, 
+    .navbar-default .navbar-nav > .active > a:focus,
+    .navbar-default .navbar-nav > .open > a, 
+    .navbar-default .navbar-nav > .open > a:hover, 
+    .navbar-default .navbar-nav > .open > a:focus,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
+     background-color: #2ECA86; color: #fff;}
+
+   header{}
+   .top_name,.home-btn,.page_bg{display: none;}
+   .language{border-left: 0px; border-right: 0px; }
+   .about_box{margin:8px 0px 0px 0px;}
+   .about_box section img{margin:10px 15px 0px 0px;max-width: 180px}
+   .about_contents{ line-height:28px;}
+   .list_box{margin-top: 20px;}
+   .search_group{margin: 10px 0px 5px 0px;}
+   #topsearch{display: none;}
+   .logo{display: block; margin: 0 auto; margin-top:25px; margin-bottom: 15px; max-width:380px;}
+   .flash div.bx-pager{ /*display:none;*/}
+   .about_h2{margin-top:35px;}
+   .left_h2{margin-top: 25px;}
+   .list_related h2.left_h2{margin-top: 60px;}
+   .product_img,.product_list2 div.product_img{min-height: 100px; margin-bottom: 35px;}
+   .related_list div.product_img{min-height: 180px;}
+   .product_con img,.contents img{width:100%;}
+   .case_bg{padding-bottom: 25px;}
+   .case_img,.team_img{min-height: 100px; margin-bottom: 35px;}
+   .case_desc h3,.team_desc a{font-size: 14px; padding: 10px 4px 12px 4px; margin-top:0px;}
+   .case_desc p,.case_more,.team_desc p{display: none;}
+   .news_box{margin-top: 10px;}
+   .news_time{ display:none;}
+   .left_news ul{padding-bottom: 20px;}
+   .index_contact{margin-top:5px;}
+   .product_h1{ line-height:22px; font-size:16px; margin-top: 35px;}
+   .footer_nav{background-color: #fafafa;}
+   #pic-page a img {width:35px;}
+   #cmsFloatPanel{ display: none;}
+   .point span.to_prev,.point span.to_next{text-align:left; padding-bottom: 8px;}
+   .product_list2{}
+   footer{ }
+}
+
+@media screen and (max-width: 767px) {
+  .copyright_p{ display:none;}
+}
+
+/*440px到768px*/
+@media screen and (min-width:440px) and (max-width:768px) {
+.col-mm-1, .col-mm-2, .col-mm-3, .col-mm-4, .col-mm-5, .col-mm-6, .col-mm-7, .col-mm-8, .col-mm-9, .col-mm-10, .col-mm-11, .col-mm-12 {
+ float: left;
+}
+.col-mm-12 {
+ width: 100%;
+}
+.col-mm-11 {
+ width: 91.66666667%;
+}
+.col-mm-10 {
+ width: 83.33333333%;
+}
+.col-mm-9 {
+ width: 75%;
+}
+.col-mm-8 {
+ width: 66.66666667%;
+}
+.col-mm-7 {
+ width: 58.33333333%;
+}
+.col-mm-6 {
+ width: 50%;
+}
+.col-mm-5 {
+ width: 41.66666667%;
+}
+.col-mm-4 {
+ width: 33.33333333%;
+}
+.col-mm-3 {
+ width: 25%;
+}
+.col-mm-2 {
+ width: 16.66666667%;
+}
+.col-mm-1 {
+ width: 8.33333333%;
+}
+.logo{max-width:380px;}
+}
+
+@media screen and (max-width: 414px) {
+.logo{max-width:280px;}
+}
+/*公司简介*/
+.about{background: #F9FAFB;}
+.about_h2{text-align: center; font-size:26px; color:#000; margin-top:50px;}
+.about_h2 span{color: #01af63;}
+.about_line{padding: 3px 0px; background: url(../images/about_line.jpg) center center no-repeat;}
+.about_p{text-align: center;  color: #c3c3c3; font-size:16px; text-transform: uppercase;padding:0px;}
+.about_contents{color:#2F2F2F; text-align: center; line-height:31px; padding:5px 0px 10px 0px;}
+a.about_more{ display: block; margin: 0 auto; width: 130px; text-align: center; color:#01af63; padding: 10px 0px; background: #fff; border:1px solid #01af63; margin-bottom:20px;}
+a.about_more:hover{color: #fff; background: #01af63; text-decoration: none;}
+.mouse_img{width: 33px; height: 46px; margin: 0 auto; background: url(../images/mouse.png) no-repeat center center; position: relative; top: 23px; z-index: 99px;}
+
