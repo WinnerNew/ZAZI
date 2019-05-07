@@ -25,6 +25,10 @@ nav {
 }
 .nav-pills>li{
     margin: 0 30px;
+    
+}
+.nav-pills li a{
+    color:#000 !important;
 }
 .nav-pills>li>a {
     border-radius: 0px;
@@ -100,6 +104,7 @@ footer {
 }
 .back_top:hover{
     background-color: #01AF63;
+    color:#fff;
     
 }
 .glyphicon:hover{
