@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +22,7 @@
     <header>
         <div class="top">
             <div class="container">
-                <span class="fl top-wl">欢迎光临~ZAZI企业网站V2.0</span>
+                <span class="fl top-wl">欢迎光临~ZAZI企业网站V1.0</span>
                 <span class="fr"><span class="glyphicon glyphicon-earphone"
                         aria-hidden="true"></span>咨询电话：0755-27784427</span>
             </div>
@@ -152,16 +153,17 @@
     <footer>
         <div class="contact">
             <div class="container">
-            <p>联系我们</p>
-            <hr>
-            <!-- <br> -->
-            <p>电话:0755-27784427</p>
+                <p>联系我们</p>
+                <hr>
+                <!-- <br> -->
+                <p>电话:0755-27784427</p>
                 <br>
-            <p>电子邮件:77540508@qq.com</p>
-            <div class="wx">
+                <p>电子邮件:77540508@qq.com</p>
+                <div class="br"></div>
+                <div class="wx">
                     <img src="images/wx.png" alt="微信公众号">
+                </div>
             </div>
-        </div>
         </div>
         <div class="copyright">
             <p>CopyRight 2018 All Right Reserved ZAZI外贸网站&nbsp;ICP:08118166 <a href="/A09/sitemap.html"
@@ -169,7 +171,7 @@
             <p class="copyright_p">地址：深圳市宝安区福永街道凤凰社区凤凰西区242号 &nbsp;电话：0755-27784427 &nbsp;传真：020-98-87961814&nbsp;</p>
         </div>
     </footer>
-
+    <div class="back_top"><span class="glyphicon glyphicon-chevron-up"></span></div>
     <script src="assets/jquery/dist/jquery.min.js"></script>
     <script src="assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
     <script>
@@ -182,6 +184,9 @@
                 $(this).removeClass('active'); // 删除其兄弟元素的样式
                 // $(this).addClass('active'); // 为点击元素添加类名
                 // $(.nav li:first-child).addClass("active");
+            });
+            $('.back_top').bind('click', function () {
+                $(window).scrollTop(0);
             });
         });
     </script>

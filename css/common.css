@@ -60,19 +60,48 @@ footer {
     margin: 10px 0;
     float: right;
     margin-top: -65px;    
+    margin-right: 60px;
 }
 .wx::after {
     clear: both;
 }
  .contact img{
      display: block;
-    width: 90px;
+    width: 120px;
     float: right;
     /* margin-top: -20px; */
+    border-left: 1px solid  #DFE1Ef;
+    padding-left: 20px;
 }
+
 .copyright {
     color:#fff;
     background-color: #1F1F1F;
     padding-bottom: 10px;
     padding: 10px 0;
+}
+.back_top {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    position: fixed;
+    left:93%;
+    top:75%;
+    border:1px solid #bac5d6;
+}
+.back_top .glyphicon{
+    text-align: center;
+    display: block;
+    position: relative;
+    top:50%;
+    margin-top:-14px;
+    color:#01AF63;
+    font-size: 28px;
+}
+.back_top:hover{
+    background-color: #01AF63;
+    
+}
+.glyphicon:hover{
+    color:#fff;
 }

@@ -142,10 +142,12 @@ ul{list-style:none;}
  width: 8.33333333%;
 }
 .logo{max-width:380px;}
+.back_top {display: none;}
 }
 
 @media screen and (max-width: 414px) {
 .logo{max-width:280px;}
+.back_top {display: none;}
 }
 /*公司简介*/
 .about{background: #F9FAFB;}
