@@ -5,6 +5,7 @@ ul{list-style:none;}
 .fl{float: left;}
 @media screen and (min-width: 769px) {
     header{}
+    .mb_nav{display: none}
     .logo{margin-top: 18px;}
    .navbar{ margin-top:15px;  min-height: 50px;  border-bottom: 3px solid #01AF63;}
    .navbar-nav > li{}
@@ -34,6 +35,12 @@ ul{list-style:none;}
 
 /*小屏幕*/
 @media screen and (max-width: 768px) {
+  .mb_nav{display: block}
+  nav .container{
+    background-color: #01af63;
+    color:#fff;
+    /* height: 20px; */
+  }
     .top-wl{display: none;}
    .navbar{min-height: 50px; margin-top:10px; background-color: #01AF63;}
    .navbar-default .navbar-brand {color: #fff; font-size: 16px;}
@@ -79,6 +86,7 @@ ul{list-style:none;}
    .product_img,.product_list2 div.product_img{min-height: 100px; margin-bottom: 35px;}
    .related_list div.product_img{min-height: 180px;}
    .product_con img,.contents img{width:100%;}
+
    .case_bg{padding-bottom: 25px;}
    .case_img,.team_img{min-height: 100px; margin-bottom: 35px;}
    .case_desc h3,.team_desc a{font-size: 14px; padding: 10px 4px 12px 4px; margin-top:0px;}
@@ -97,11 +105,18 @@ ul{list-style:none;}
 }
 
 @media screen and (max-width: 767px) {
+  .mb_nav{display: block;}
   .copyright_p{ display:none;}
 }
 
 /*440px到768px*/
 @media screen and (min-width:440px) and (max-width:768px) {
+  nav .container{
+    background-color: #01af63;
+    color:#fff;
+    /* height: 20px; */
+  }
+.mb_nav{display: block;clear: both;}
 .col-mm-1, .col-mm-2, .col-mm-3, .col-mm-4, .col-mm-5, .col-mm-6, .col-mm-7, .col-mm-8, .col-mm-9, .col-mm-10, .col-mm-11, .col-mm-12 {
  float: left;
 }
@@ -146,17 +161,87 @@ ul{list-style:none;}
 }
 
 @media screen and (max-width: 414px) {
+  nav .container{background-color: #01af63;color:#fff;}
+.mb_nav{display: block}
+.glyphicon-search {display: none;}
 .logo{max-width:280px;}
 .back_top {display: none;}
 }
+.mb_nav {
+  padding: 0 10px;  
+  height: 28px;
+}
+.mb_nav span{
+  line-height: 30px;
+  font-size: 15px;
+}
+.mb_nav::after{clear: both;}
+.mb_nav li{
+  /* float: left; */
+}
+/* .cp .container {
+  overflow: hidden;
+}
+.cp_tab {
+  clear: both;
+  overflow: hidden;
+}
+.cp_tab li{
+  display: block;
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+.cp_tab li img{
+  width: 100%;
+} */
+/* .cp_tab li span{
+  display: block;
+  position: relative;
+  left: 50%;
+  margin-left: -30px;
+  border: 1px solid #485668;
+  text-align: center;
+  width: 30%;
+} */
+
 /*公司简介*/
 .about{background: #F9FAFB;}
-.about_h2{text-align: center; font-size:26px; color:#000; margin-top:50px;}
+.about_h2{text-align: center; font-size:26px; color:#000; margin-top:50px;letter-spacing:8px;}
 .about_h2 span{color: #01af63;}
-.about_line{padding: 3px 0px; background: url(../images/about_line.jpg) center center no-repeat;}
-.about_p{text-align: center;  color: #c3c3c3; font-size:16px; text-transform: uppercase;padding:0px;}
-.about_contents{color:#2F2F2F; text-align: center; line-height:31px; padding:5px 0px 10px 0px;}
+.about_line{padding: 3px 0px; background: url(../images/about_line.png) center center no-repeat;}
+.about_p{text-align: center;  color: #c3c3c3; font-size:16px; text-transform: uppercase;padding:0px;padding-left: -6px;}
+.about_contents{color:#2F2F2F;  line-height:31px; padding:5px 0px 10px 0px;}
 a.about_more{ display: block; margin: 0 auto; width: 130px; text-align: center; color:#01af63; padding: 10px 0px; background: #fff; border:1px solid #01af63; margin-bottom:20px;}
 a.about_more:hover{color: #fff; background: #01af63; text-decoration: none;}
 .mouse_img{width: 33px; height: 46px; margin: 0 auto; background: url(../images/mouse.png) no-repeat center center; position: relative; top: 23px; z-index: 99px;}
+.about_contents span{color: aqua;}
 
+/*  */
+.index_1 { padding: 60px 0 120px; background: #f9fafb; overflow: hidden; }
+.index_1 a { display: block; position: relative; width: 550px; height: 430px; background: no-repeat center; background-size: cover; }
+.index_1 span { display: block; position: absolute; left: 50%; bottom: -63px; width: 350px; padding: 30px 0; margin-left: -175px; background: #fff; text-align: center; }
+.index_1 span em { display: block; margin-bottom: 15px; font-size: 18px; color: #485668; font-weight: bold; }
+.index_1 span i { display: inline-block; height: 34px; padding: 0 15px; background: #f3f6fa; font-size: 14px; color: #485668; line-height: 34px; font-weight: bold; }
+.index_1 span i:hover{background-color: #01af63; color:#fff;}
+
+.index_2 { padding: 60px 0; overflow: hidden; }
+.index_2 .i_mian { padding: 60px 0; }
+.index_2 .i_mian > button { position: absolute; top: 50%; z-index: 99; border: none; width: 40px; height: 40px; margin-top: -20px; border-radius: 0; background: transparent; font-size: 0; text-align: center; line-height: 40px; cursor: pointer; }
+.index_2 .i_mian > button.slick-prev { left: -3%; }
+.index_2 .i_mian > button.slick-prev:before { content: '\e610'; }
+.index_2 .i_mian > button.slick-next { right: -3%; }
+.index_2 .i_mian > button.slick-next:before { content: '\e614'; }
+.index_2 .i_mian > button:before { display: inline-block; font-family: "iconfont" !important; font-size: 36px; color: #2f3843; }
+.index_2 .i_mian > button.slick-disabled { pointer-events: none; }
+.index_2 .i_mian > button.slick-disabled:before { color: #f9fafb; }
+.index_2 .i_mian .slick-dots { position: absolute; left: 0; bottom: 1%; z-index: 99; width: 100%; text-align: center; }
+.index_2 .i_mian .slick-dots li { display: inline-block; width: 8px; height: 8px; overflow: hidden; margin: 0 10px; border: 1px solid #485668; border-radius: 50%; background: #fff; vertical-align: bottom; }
+.index_2 .i_mian .slick-dots li.slick-active { background: #98c0e6; border: 1px solid #98c0e6; }
+.index_2 .i_mian .slick-dots li button { display: none; }
+.index_2 .i_ii { width: 0; padding: 0 10px; box-sizing: border-box; }
+.index_2 .i_ii h4 img { width: 100%; }
+.index_2 .i_ii h5 { margin: 20px 0 36px; font-size: 14px; color: #485668; text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.index_2 .i_ii h6 a { display: block; position: relative; width: 86px; height: 34px; margin: 0 auto; background: #fff; border: 1px solid #485668; box-sizing: border-box; font-size: 14px; color: #485668; text-align: center; line-height: 31px; }
+.index_2 .i_ii h6 a:before { position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; content: ''; background: #eef2f8; border-top: 1px solid #485668; }
+.index_2 .i_ii h6 a:hover { background: #485668; color: #fff; }

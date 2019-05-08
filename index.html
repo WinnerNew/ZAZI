@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
     <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
     <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
     <!--[if lt IE 9]>
@@ -35,7 +36,7 @@
         <!-- 导航栏 -->
         <nav>
             <div class="container">
-                <div class="navbar-header">
+                <!-- <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
                         aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only"></span>
@@ -45,7 +46,26 @@
                     </button>
                     <span id="small_search" class="glyphicon glyphicon-search" aria-hidden="true"></span>
                     <a class="navbar-brand" href="#">导航菜单</a>
+                </div> -->
+                <!-- 移动端导航 -->
+                <div class="mb_nav">
+                    <span class="glyphicon glyphicon-search fl"></span>
+                    <span class="glyphicon glyphicon-menu-hamburger fr collapsed" data-toggle="collapse"
+                        data-target="#box" aria-expanded="false"></span>
+                    <ul id="box" aria-expanded="false" class="collapse" style="height: 0px;">
+                        <a href="#"></a>
+                        <li role="presentation">关于ZAZI</li></a>
+                        <a href="#"></a>
+                        <li role="presentation">产品系列</li></a>
+                        <a href="#"></a>
+                        <li role="presentation">畅销单品</li></a>
+                        <a href="#"></a>
+                        <li role="presentation">品牌资讯</li></a>
+                        <a href="#"></a>
+                        <li role="presentation">联系我们</li></a>
+                    </ul>
                 </div>
+                <!-- 移动端导航 End -->
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav nav-pills">
                         <li role="presentation" class="active"><a href="#">网站首页</a></li>
@@ -108,12 +128,10 @@
                 <p class="about_p">COMPANY PROFILE</p>
                 <section>
                     <p class="about_contents">
-                        ZAZI企业网站系统LankeCMS是采用PHP+MYSQL技术和MVC模式进行开发的，架构清晰，代码易于维护。支持伪静态功能，可生成google和百度地图，支持自定义url、关键字和描述，符合SEO标准。拥有企业网站常用的模块功能(企业简介模块、新闻模块、产品模块、下载模块、图片模块、在线留言、在线订单、友情链接、网站地图等)，强大灵活的后台管理功能，可为企业打造出专业且具有营销力的标准网站。
-
-                        网站系统功能介绍：
-                        1. 单页模块：可发布企业的各类信息，如企业简介、组织机构、企业荣誉、联系方式等，并可随意增删。
-                        2. 新闻模块：可发布企业新闻和行业新闻等，支持二级栏目，栏目个数无...</p> <a href="/A09/About-us.html"
-                        class="about_more">了解更多</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;深圳市蚤知科技有限公司，注册资金500万元，品牌为“<span>ZAZI</span>”。是一家专注于提供家庭、个人以及车载清洁整体解决方案的科技创新公司，拥有强大的研发设计、生产能力。<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;ZAZI主营产品有扫地机器人、智能垃圾桶、无线便携式吸尘器、净水器、空气净化器、臭氧、超声波、电解果蔬净化器等产品。为家庭、个人以及车载清除肉眼可见或不可见的各种形态的垃圾，做到最极致的清洁。<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;ZAZI以“让生活更清洁，让清洁更简单”为使命，以“不让卫生占用你时间”为愿景，始终坚持“落实每一件事，才能把主要矛盾推向极致，才能迎来真正有价值的创新”为经营理念，以“用科技提高生活效率与品质”为产品信念，让“ZAZI”在清洁领域成为了专业的品牌。
+                    </p> <a href="/A09/About-us.html" class="about_more">了解更多</a>
                     <section>
                     </section>
                 </section>
@@ -124,8 +142,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                    <h2 class="about_h2"><span>产品</span>系列</h2>
-                    <div class="border"></div>
+                    <h2 class="about_h2"><span>产品</span>简介</h2>
+                    <p class="about_line"></p>
+                    <p class="about_p">COMPANY PROFILE</p>
                     <div class="col-sm-4 col-md-4 col-mm-6 case_img">
                         <a
                             href="https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w5003-21477760408.1.c0277901M9u0KF&id=590781302747&scene=taobao_shop"><img
@@ -149,7 +168,160 @@
 
         </div>
     </div>
+    <div class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <h2 class="about_h2"><span>产品</span>简介</h2>
+                    <p class="about_line"></p>
+                    <p class="about_p">COMPANY PROFILE</p>
+                    <div class="index_1">
+                        <div class="wrap clearfix">
+                            <a class="fl wow fadeInLeft" data-wow-offset="-40"
+                                style="background-image: url(images/c1.jpg); visibility: visible; animation-name: fadeInLeft;"
+                                href="http://alantb.taobao.com">
+                                <span>
+                                    <em>新品推荐</em>
+                                    <i>智能声控灯</i>
+                                </span>
+                            </a>
+                            <a class="fr wow fadeInRight" data-wow-offset="-40"
+                                style="background-image: url(images/c2.jpg); visibility: visible; animation-name: fadeInRight;"
+                                href="http://alantb.taobao.com">
+                                <span class="">
+                                    <em>畅销单品</em>
+                                    <i>智能灭蚊灯</i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 产品列表 -->
+    <div class="index_2">
+        <div class="container">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <h2 class="about_h2"><span>产品</span>简介</h2>
+                <p class="about_line"></p>
+                <p class="about_p">COMPANY PROFILE</p>
+                <!-- <div class="cp_tab">
+                    <ul>
+                        <li><img src="images/bv.jpg" alt=""><a href=""><span>查看详情</span></a></li>
+                        <li><img src="images/bv.jpg" alt=""><a href=""><span>查看详情</span></a></li>
+                        <li><img src="images/bv.jpg" alt=""><a href=""><span>查看详情</span></a></li>
+                        <li><img src="images/bv.jpg" alt=""><a href=""><span>查看详情</span></a></li>
+                        <li><img src="images/bv.jpg" alt=""><a href=""><span>查看详情</span></a></li>
+                        <li><img src="images/bv.jpg" alt=""><a href=""><span>查看详情</span></a></li>
+                        <li><img src="images/bv.jpg" alt=""><a href=""><span>查看详情</span></a></li>
+                        <li><img src="images/bv.jpg" alt=""><a href=""><span>查看详情</span></a></li>
+                    </ul>
+                </div> -->
+                <div class="i_mian wow fadeInUp slick-initialized slick-slider slick-dotted" role="toolbar"
+                    style="visibility: visible; animation-name: fadeInUp;"><button type="button" data-role="none"
+                        class="slick-prev slick-arrow" aria-label="Previous" role="button" aria-disabled="false"
+                        style="display: block;">Previous</button>
 
+                    <div aria-live="polite" class="slick-list draggable">
+                        <div class="slick-track"
+                            style="opacity: 1; width: 2400px; transform: translate3d(-1200px, 0px, 0px);"
+                            role="listbox">
+                            <div class="i_ii slick-slide" data-slick-index="0" aria-hidden="true" style="width: 300px;"
+                                tabindex="-1" role="option" aria-describedby="slick-slide10">
+                                <h4>
+                                    <a href="/sfrf/292.html" tabindex="-1"><img src="images/bv.jpg"></a>
+                                </h4>
+                                <h5>茶酵素活力水</h5>
+                                <h6><a href="/sfrf/292.html" tabindex="-1">查看详情</a></h6>
+                            </div>
+                            <div class="i_ii slick-slide" data-slick-index="1" aria-hidden="true" style="width: 300px;"
+                                tabindex="-1" role="option" aria-describedby="slick-slide11">
+                                <h4>
+                                    <a href="/class3/291.html" tabindex="-1"><img src="images/bv.jpg"></a>
+                                </h4>
+                                <h5>透明质酸水感透润乳液</h5>
+                                <h6><a href="/class3/291.html" tabindex="-1">查看详情</a></h6>
+                            </div>
+                            <div class="i_ii slick-slide" data-slick-index="2" aria-hidden="true" style="width: 300px;"
+                                tabindex="-1" role="option" aria-describedby="slick-slide12">
+                                <h4>
+                                    <a href="/class2/290.html" tabindex="-1"><img src="images/bv.jpg"></a>
+                                </h4>
+                                <h5>玫瑰干细胞逆龄安瓶</h5>
+                                <h6><a href="/class2/290.html" tabindex="-1">查看详情</a></h6>
+                            </div>
+                            <div class="i_ii slick-slide" data-slick-index="3" aria-hidden="true" style="width: 300px;"
+                                tabindex="-1" role="option" aria-describedby="slick-slide13">
+                                <h4>
+                                    <a href="/class1/289.html" tabindex="-1"><img src="images/bv.jpg"></a>
+                                </h4>
+                                <h5>氨基酸特护喷雾</h5>
+                                <h6><a href="/class1/289.html" tabindex="-1">查看详情</a></h6>
+                            </div>
+                            <div class="i_ii slick-slide slick-current slick-active" data-slick-index="4"
+                                aria-hidden="false" style="width: 300px;" tabindex="-1" role="option"
+                                aria-describedby="slick-slide14">
+                                <h4>
+                                    <a href="/class1/284.html" tabindex="0"><img src="images/bv.jpg"></a>
+                                </h4>
+                                <h5>透明质酸水感透润乳液</h5>
+                                <h6><a href="/class1/284.html" tabindex="0">查看详情</a></h6>
+                            </div>
+                            <div class="i_ii slick-slide slick-active" data-slick-index="5" aria-hidden="false"
+                                style="width: 300px;" tabindex="-1" role="option" aria-describedby="slick-slide15">
+                                <h4>
+                                    <a href="/class1/285.html" tabindex="0"><img src="images/bv.jpg"></a>
+                                </h4>
+                                <h5>茶酵素活力水</h5>
+                                <h6><a href="/class1/285.html" tabindex="0">查看详情</a></h6>
+                            </div>
+                            <div class="i_ii slick-slide slick-active" data-slick-index="6" aria-hidden="false"
+                                style="width: 300px;" tabindex="-1" role="option" aria-describedby="slick-slide16">
+                                <h4>
+                                    <a href="/class3/278.html" tabindex="0"><img src="images/bv.jpg"></a>
+                                </h4>
+                                <h5>透明质酸水感透润乳液</h5>
+                                <h6><a href="/class3/278.html" tabindex="0">查看详情</a></h6>
+                            </div>
+                            <div class="i_ii slick-slide slick-active" data-slick-index="7" aria-hidden="false"
+                                style="width: 300px;" tabindex="-1" role="option" aria-describedby="slick-slide17">
+                                <h4>
+                                    <a href="/class2/277.html" tabindex="0"><img src="images/bv.jpg"></a>
+                                </h4>
+                                <h5>透明质酸水感透润保湿霜</h5>
+                                <h6><a href="/class2/277.html" tabindex="0">查看详情</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" data-role="none" class="slick-next slick-arrow slick-disabled"
+                        aria-label="Next" role="button" style="display: block;" aria-disabled="true">Next</button>
+                    <ul class="slick-dots" style="display: block;" role="tablist">
+                        <li class="" aria-hidden="true" role="presentation" aria-selected="true"
+                            aria-controls="navigation10" id="slick-slide10"><button type="button" data-role="none"
+                                role="button" tabindex="0">1</button></li>
+                        <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation11"
+                            id="slick-slide11" class=""><button type="button" data-role="none" role="button"
+                                tabindex="0">2</button>
+                        </li>
+                        <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation12"
+                            id="slick-slide12" class=""><button type="button" data-role="none" role="button"
+                                tabindex="0">3</button>
+                        </li>
+                        <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation13"
+                            id="slick-slide13" class=""><button type="button" data-role="none" role="button"
+                                tabindex="0">4</button>
+                        </li>
+                        <li aria-hidden="false" role="presentation" aria-selected="false" aria-controls="navigation14"
+                            id="slick-slide14" class="slick-active"><button type="button" data-role="none" role="button"
+                                tabindex="0">5</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 产品列表 End -->
     <footer>
         <div class="contact">
             <div class="container">
@@ -174,6 +346,10 @@
     <div class="back_top"><span class="glyphicon glyphicon-chevron-up"></span></div>
     <script src="assets/jquery/dist/jquery.min.js"></script>
     <script src="assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/dod.min.js"></script>
+    <script src="js/js.js"></script>
     <script>
         $(function () {
             $(".nav li").hover(function () {
@@ -185,9 +361,9 @@
                 // $(this).addClass('active'); // 为点击元素添加类名
                 // $(.nav li:first-child).addClass("active");
             });
-            $('.back_top').bind('click', function () {
-                $(window).scrollTop(0);
-            });
+            // $('.back_top').bind('click', function () {
+            //     $(window).scrollTop(0);
+            // });
         });
     </script>
 </body>

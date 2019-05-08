@@ -14,10 +14,11 @@ header>.logo img{
     margin-bottom: 30px;
 }
 nav {
-    border-bottom: 4px solid #01AF63;
+    border-bottom: 2px solid #01AF63;
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
     background-color: #01AF63;
+    color:#fff;
 }
 .nav-pills{
     margin: 0 auto;
@@ -28,7 +29,8 @@ nav {
     
 }
 .nav-pills li a{
-    color:#000 !important;
+    color:#485668;
+    font-size: 16px;
 }
 .nav-pills>li>a {
     border-radius: 0px;
@@ -46,6 +48,7 @@ footer {
 }
 .contact{
     background-color: #EEF2F8;
+    margin-top: 10px;
 }
 .contact p{
     /* display: block; */
