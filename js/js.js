@@ -7,7 +7,7 @@ $(document).ready(function(){
 ////		threshold : 200,
 ////      failurelimit : 10
 //	});
-	Ftop(0);
+	//Ftop(0);
 	var search=document.querySelector('.search');
 	search.onmouseover=function(){
 		addClass(this,'on');
@@ -40,7 +40,7 @@ var $li=$('.nav>ul>li'),
 });
 //返回顶部
 var timer,isTop = true;
-document.querySelector('.foot_top').onclick = function(){
+document.querySelector('.back_top').onclick = function(){
 	var that=this;
 	timer=setInterval(function(){
 		var document_S=document.documentElement.scrollTop||document.body.scrollTop;
@@ -61,11 +61,11 @@ window.onscroll = function(){
     isTop = false;
 }
 function Ftop(s){
-	var that=document.querySelector('.foot_top'),document_H=window.innerHeight;
+	var that=document.querySelector('.back_top'),document_H=window.innerHeight;
 	if(s>document_H){
-		that.style.display='block'
+		that.style.display='block';
 	}else{
-		that.style.display='none'
+		that.style.display='none';
 	}
 }
 //添加class
