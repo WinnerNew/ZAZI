@@ -245,3 +245,14 @@ a.about_more:hover{color: #fff; background: #01af63; text-decoration: none;}
 .index_2 .i_ii h6 a { display: block; position: relative; width: 86px; height: 34px; margin: 0 auto; background: #fff; border: 1px solid #485668; box-sizing: border-box; font-size: 14px; color: #485668; text-align: center; line-height: 31px; }
 .index_2 .i_ii h6 a:before { position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; content: ''; background: #eef2f8; border-top: 1px solid #485668; }
 .index_2 .i_ii h6 a:hover { background: #485668; color: #fff; }
+
+.index_3 { padding: 16.1% 0; overflow: hidden; background: no-repeat center; background-size: cover; }
+.index_3 .wrap { position: relative; }
+.index_3 .wrap > a { display: block; position: absolute; top: 50%; left: 200px; width: 339px; height: 331px; margin-top: -160px; background: no-repeat center; background-size: cover; line-height: 331px; font-size: 0; }
+.index_3 .wrap > a > div { display: inline-block; width: 100%; vertical-align: middle; text-align: center; line-height: 1; }
+.index_3 .wrap > a > div h4 { font-size: 14px; color: #485668; }
+.index_3 .wrap > a > div h5 { position: relative; margin-bottom: 20px; padding: 25px 0; font-size: 24px; color: #485668; }
+.index_3 .wrap > a > div h5:before { position: absolute; bottom: 0; left: 50%; width: 16px; height: 1px; content: ''; margin-left: -8px; background: #485668; }
+.index_3 .wrap > a > div h6 span { display: inline-block; position: relative; padding: 0 20px; line-height: 18px; }
+.index_3 .wrap > a > div h6 span em { position: relative; z-index: 2; font-size: 14px; color: #485668; }
+.index_3 .wrap > a > div h6 span:before { position: absolute; top: 5px; left: -5px; z-index: 1; width: 100%; height: 100%; content: ''; background: #eef2f8; }
