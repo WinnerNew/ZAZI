@@ -30,7 +30,7 @@ var $li=$('.nav>ul>li'),
 	for(var i=0;i<search.length;i++){
 		search[i].onmouseover=function(){
 			var kk=this.getAttribute("data-hover")
-			this.innerHTML=kk
+			this.innerHTML=kk;
 		};
 		search[i].onmouseout=function(){
 			var kk=this.getAttribute("data-sd")
