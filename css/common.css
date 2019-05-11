@@ -95,6 +95,7 @@ footer {
     left:93%;
     top:75%;
     border:1px solid #bac5d6;
+    display: none;
 }
 .back_top .glyphicon{
     text-align: center;
