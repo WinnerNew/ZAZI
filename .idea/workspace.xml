@@ -27,7 +27,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="57" />
+          <entry key="CSS" value="62" />
           <entry key="HTML" value="9" />
           <entry key="JavaScript" value="1" />
         </counts>
@@ -57,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="233" column="80" selection-start-line="233" selection-start-column="80" selection-end-line="233" selection-end-column="80" />
+            <state relative-caret-position="101">
+              <caret line="224" column="78" selection-start-line="224" selection-start-column="78" selection-end-line="224" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -175,12 +175,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557591167091</updated>
-      <workItem from="1557591169980" duration="2229000" />
+      <workItem from="1557591169980" duration="2543000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2229000" />
+    <option name="totallyTimeSpent" value="2543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -235,8 +235,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="233" column="80" selection-start-line="233" selection-start-column="80" selection-end-line="233" selection-end-column="80" />
+        <state relative-caret-position="101">
+          <caret line="224" column="78" selection-start-line="224" selection-start-column="78" selection-end-line="224" selection-end-column="78" />
         </state>
       </provider>
     </entry>
