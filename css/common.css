@@ -13,6 +13,32 @@ header>.logo img{
     margin-top:20px;
     margin-bottom: 30px;
 }
+.dropdown-menu{
+    min-width: 100px;
+    border:none;
+    margin-top: 0px;
+    border-radius:0;
+}
+.dropdown .dropdown-toggle{
+    background: rgba(0,0,0,0.0);
+    border: 0;
+    color:#fff;
+    font-size: 20px;
+}
+.open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+    background:rgba(0,0,0,0.8);
+}
+.dropdown .dropdown-menu{
+    background: rgba(0,0,0,0.8);
+    color:#fff;
+}
+.dropdown-menu>li>a{
+    color: #fff;
+    padding: 0 20px;
+}
+.dropdown .dropdown-menu{
+
+}
 nav {
     border-bottom: 2px solid #01AF63;
 }
