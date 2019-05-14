@@ -1,20 +1,20 @@
 $(document).ready(function(){
 //延迟加载图片
-//	$("img.lazy").lazyload({
-//		placeholder : "images/loading.gif",
-//		effect : "fadeIn",
-////		event: 'mouseover click',
-////		threshold : 200,
-////      failurelimit : 10
-//	});
+// 	$("img.lazy").lazyload({
+// 		placeholder : "images/loading.gif",
+// 		effect : "fadeIn",
+// 		event: 'mouseover click',
+// 		threshold : 200,
+//       failurelimit : 10
+// 	});
 	//Ftop(0);
-	var search=document.querySelector('.search');
-	search.onmouseover=function(){
-		addClass(this,'on');
-	};
-	search.onmouseout=function(){
-		removeClass(this,'on');
-	};
+	//var search=document.querySelector('.search');
+	// search.onmouseover=function(){
+	// 	addClass(this,'on');
+	// };
+	// search.onmouseout=function(){
+	// 	removeClass(this,'on');
+	// };
 var $li=$('.nav>ul>li'),
 	$find=$('.nav_down');
 	$li.on('mouseenter',function(){

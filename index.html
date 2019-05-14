@@ -229,9 +229,9 @@
                     <h2 class="about_h2"><span>产品</span>展示</h2>
                     <p class="about_line"></p>
                     <p class="about_p">COMPANY PROFILE</p>
-                    <div class="cp_banner">
-                        <div class="cp_ul">
-                    <lu class="">
+                    <div class="cp_banner ">
+
+                    <ul class="cp_ul">
                         <li class="cp_li"><a href=""><img src="images/b5.jpg" alt=""><span>查看详情</span></a></li>
                         <li class="cp_li"><a href=""><img src="images/b1.jpg" alt=""><span>查看详情</span></a></li>
                         <li class="cp_li"><a href=""><img src="images/b2.jpg" alt=""><span>查看详情</span></a></li>
@@ -241,12 +241,12 @@
                         <li class="cp_li"><a href=""><img src="images/b1.jpg" alt=""><span>查看详情</span></a></li>
                         <!--<li><span class="glyphicon glyphicon-menu-left"></span></li>-->
                         <!--<li><span class="glyphicon glyphicon-menu-right"></span></li>-->
-                    </lu>
-                        </div>
-                        <span class="glyphicon glyphicon-menu-left"></span>
-                        <span class="glyphicon glyphicon-menu-right"></span>
-                </div>
+                    </ul>
 
+
+                </div>
+                    <span class="glyphicon glyphicon-menu-left"></span>
+                    <span class="glyphicon glyphicon-menu-right"></span>
                 </div>
             </div>
         </div>
@@ -333,6 +333,9 @@
     <script src="js/index.js"></script>
     <script src="js/dod.min.js"></script>
     <script src="js/js.js"></script>
+    <script type="text/javascript">
+
+    </script>
     <script>
         $(function () {
             $(".nav li").hover(function () {
@@ -344,7 +347,13 @@
                 // $(this).addClass('active'); // 为点击元素添加类名
                 // $(.nav li:first-child).addClass("active");
             });
+
+            $(".glyphicon-menu-left").click(function () {
+                // $("cp_ul").style.left = "-50px";
+                console.log("a");
+            })
         });
+
     </script>
 </body>
 

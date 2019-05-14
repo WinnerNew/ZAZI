@@ -226,17 +226,18 @@ a.about_more:hover{color: #fff; background: #01af63; text-decoration: none;}
 .about_contents span{color: aqua;}
 
 /* 产品展示 */
-.cp_banner {width: 100%;position: relative;}
-.cp_banner .cp_ul{height: 325px !important;top: 0;display: block;}
-.cp_banner .cp_li {
-    width: 25%;list-style: none;float: left;transition: top 0.3s;top:0;margin-top: 10px;}
+.cp_banner {width: 100%;height: 320px;overflow: hidden;position: relative}
+.cp_banner .cp_ul{width: 2000px;overflow: hidden;margin: 0 auto;position: relative;left: 0}
+.cp_banner .cp_li {    height: 318px;
+    width: 263px;    margin-left: 10px;
+    list-style: none;float: left;transition: top 0.3s;top:0;margin-top: 10px;}
 .cp_banner .cp_li:hover{top: -10px;}
 .cp_banner .cp_li a{display: block;margin: 5px;text-decoration: none;background-color: #E6E2E7;padding: 10px;}
 .cp_banner .cp_li a img{width: 100%; transition: 0.3s}
-.cp_banner .glyphicon-menu-left{position: absolute;top:50%;margin-top:-15px;font-size: 30px;left: -40px;color: #485668;display: none;}
-.cp_banner .glyphicon-menu-left:hover{color:#01AF63}
-.cp_banner .glyphicon-menu-right{position: absolute;top:50%;margin-top:-15px;font-size: 30px;right: -40px;color: #485668;display: block;}
-.cp_banner .glyphicon-menu-right:hover{color:#01AF63}
+ .glyphicon-menu-left{position: absolute;top:50%;margin-top:50px;font-size: 30px;left: -40px;color: #485668;display: none;}
+.glyphicon-menu-left:hover{color:#01AF63}
+.glyphicon-menu-right{position: absolute;top:50%;margin-top:50px;font-size: 30px;right: -40px;color: #485668;display: block;}
+ .glyphicon-menu-right:hover{color:#01AF63}
 /* .cp_banner .cp_li a img:hover{width: 100%;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.8);
 } */
