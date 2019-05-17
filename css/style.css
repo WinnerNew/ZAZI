@@ -234,7 +234,7 @@ a.about_more:hover{color: #fff; background: #01af63; text-decoration: none;}
 .cp_banner .cp_li:hover{top: -10px;}
 .cp_banner .cp_li a{display: block;margin: 5px;text-decoration: none;background-color: #E6E2E7;padding: 10px;}
 .cp_banner .cp_li a img{width: 100%; transition: 0.3s}
- .glyphicon-menu-left{position: absolute;top:50%;margin-top:50px;font-size: 30px;left: -40px;color: #485668;display: none;}
+ .glyphicon-menu-left{position: absolute;top:50%;margin-top:50px;font-size: 30px;left: -40px;color: #485668;display: block;}
 .glyphicon-menu-left:hover{color:#01AF63}
 .glyphicon-menu-right{position: absolute;top:50%;margin-top:50px;font-size: 30px;right: -40px;color: #485668;display: block;}
  .glyphicon-menu-right:hover{color:#01AF63}
