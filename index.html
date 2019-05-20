@@ -380,8 +380,9 @@
                 // }
                 // var 
         // };
-        var tamp = $(".cp_ul").position().left;
+//         var tamp = $(".cp_ul").position().left;
         function animatel(){
+            var tamp = $(".cp_ul").position().left;
             tamp = $(".cp_li").outerWidth(true)+tamp;
             if(tamp>=-855 && tamp<0){
                 $(".cp_ul").css("left",tamp+"px") ;
@@ -392,6 +393,7 @@
             }
         }
         function animater(){
+            var tamp = $(".cp_ul").position().left;
             tamp = tamp-$(".cp_li").outerWidth(true);
             if(tamp>=-855 && tamp<0){
                 $(".cp_ul").css("left",tamp+"px") ;
