@@ -382,24 +382,24 @@
         // };
         var tamp = $(".cp_ul").position().left;
         function animatel(){
-            console.log(tamp);
             tamp = $(".cp_li").outerWidth(true)+tamp;
-            if(tamp >= 0){
-                $(".cp_ul").css("left","0px");
-            }else{
-            $(".cp_ul").css("left",tamp+"px") ;
+            if(tamp>=-855 && tamp<0){
+                $(".cp_ul").css("left",tamp+"px") ;
+            }else if(tamp<=-855){
+                $(".cp_ul").css("left","-855px");
+            }else {
+                $(".cp_ul").css("left","-0px");
             }
-            console.log(tamp);
         }
         function animater(){
-            console.log(tamp);
             tamp = tamp-$(".cp_li").outerWidth(true);
-            if(tamp<=-526){
-                $(".cp_ul").css("left","-526px");
-            }else{
-            $(".cp_ul").css("left",tamp+"px") ;
+            if(tamp>=-855 && tamp<0){
+                $(".cp_ul").css("left",tamp+"px") ;
+            }else if(tamp<=-855){
+                $(".cp_ul").css("left","-855px");
+            }else {
+                $(".cp_ul").css("left","-0px");
             }
-            console.log(tamp);
         }
         $(".glyphicon-menu-right").click(function(){
             animater();
