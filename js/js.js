@@ -1,12 +1,12 @@
 $(document).ready(function(){
 //延迟加载图片
-// 	$("img.lazy").lazyload({
-// 		placeholder : "images/loading.gif",
-// 		effect : "fadeIn",
-// 		event: 'mouseover click',
-// 		threshold : 200,
-//       failurelimit : 10
-// 	});
+	$("img.lazy").lazyload({
+		placeholder : "images/loading.gif",
+		effect : "fadeIn",
+		event: 'mouseover click',
+		threshold : 200,
+      failurelimit : 10
+	});
 	//Ftop(0);
 	//var search=document.querySelector('.search');
 	// search.onmouseover=function(){
