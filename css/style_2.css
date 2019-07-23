@@ -380,7 +380,7 @@ font
 --------------------------------------------------------------*/
 @font-face {
   font-family: nicetheme;
-  src: url('../fonts/barlow-regular.ttf') format("truetype");
+  src: url('../fonts/barlow-regular_2.ttf') format("truetype");
 }
 
 .font-theme {
@@ -3076,7 +3076,7 @@ header
 }
 
 .header nav.navbar {
-  background-color: #1f7930;
+  background-color: #fff;
 }
 
 @media (max-width:767.98px) {

@@ -1,7 +1,5 @@
 .product {
     margin-top: 20px;
-
-
 }
 .modal-title {
     font-size: 16px;
@@ -124,10 +122,11 @@ ul.event-show-card-warp .desc-box .e-item-hide {
 .e-tag.e-common {
     color: #F5A821;
     border-color: #F5A821;
+    line-height: initial;
 }
 .e-tag {
     height: 18px;
-    line-height: 20px;
+    line-height: initial;
     padding: 0 6px;
     display: inline-block;
     vertical-align: middle;

@@ -40,18 +40,19 @@ var $li=$('.nav>ul>li'),
 });
 //返回顶部
 var timer,isTop = true;
-document.querySelector('.back_top').onclick = function(){
-	var that=this;
-	timer=setInterval(function(){
-		var document_S=document.documentElement.scrollTop||document.body.scrollTop;
-	    var ispeed=Math.floor(-document_S/6);
-	    document.documentElement.scrollTop=document.body.scrollTop=document_S+ispeed;
-	    if(document_S==0){
-	        clearInterval(timer);
-	    }
-	    isTop = true;
-	},30)
-}
+$(".back_top").click(
+  function () {
+    var that = this;
+    timer = setInterval(function () {
+      var document_S = document.documentElement.scrollTop || document.body.scrollTop;
+      var ispeed = Math.floor(-document_S / 6);
+      document.documentElement.scrollTop = document.body.scrollTop = document_S + ispeed;
+      if (document_S == 0) {
+        clearInterval(timer);
+      }
+      isTop = true;
+    }, 30)
+  })
 window.onscroll = function(){
 	var t = document.documentElement.scrollTop || document.body.scrollTop;
 	Ftop(t);
