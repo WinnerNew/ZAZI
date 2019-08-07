@@ -91,7 +91,7 @@ footer {
 .contact .wx{
     margin: 10px 0;
     float: right;
-    margin-top: -65px;    
+    margin-top: -50px;    
     margin-right: 60px;
 }
 .wx::after {
