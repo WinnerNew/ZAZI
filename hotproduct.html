@@ -19,28 +19,43 @@
   <script src="js/common.js"></script>
   <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
   <style>
-    #hot-event-card-box a{
+    #hot-event-card-box a {
       display: block;
     }
-    .title{
-    padding: 12px;
-    background-color: #FFF;
-    color: #b0b0b0;
-    font-size: 12px;
+    #hot-event-card-box li {
+      transition: all 0.2s ease 0s;
+      border-radius:10px;
     }
-    .title p{
+    #hot-event-card-box li:hover {
+      transform: translate(-2px);
+      /* transform: translateX(-7px); */
+      box-shadow: 3px 2px 5px #888888;
+    }
+
+    .title {
+      padding: 12px;
+      background-color: #FFF;
+      color: #b0b0b0;
+      font-size: 12px;
+    }
+
+    .title p {
       line-height: 20px;
+      font-weight: bolder;
+      font-size: 16px;
+      color: #03A9F4;
     }
-    .title span{
+
+    .title span {
       line-height: 20px;
-      color:#b0b0b0;
+      color: #b0b0b0;
     }
-    .title .price{
+
+    .title .price {
       display: flex;
       justify-content: space-between;
       margin-top: 7px;
     }
-
   </style>
   <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
   <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
@@ -52,121 +67,130 @@
 </head>
 
 <body>
-<header>
-  <div class="top">
-    <div class="container">
-      <span class="fl top-wl">ZAZI 科技——清洁整体解决方案</span>
-      <span class="fr"><span class="glyphicon glyphicon-earphone"
-                             aria-hidden="true"></span>咨询电话：0755-27784427</span>
+  <header>
+    <div class="top">
+      <div class="container">
+        <span class="fl top-wl">ZAZI 科技——清洁整体解决方案</span>
+        <span class="fr"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>咨询电话：0755-27784427</span>
+      </div>
     </div>
-  </div>
 
-  <!-- logo -->
-  <div class="logo">
-    <img src="images/logo.png" alt="ZAZI">
-  </div>
-  <!-- logo End -->
+    <!-- logo -->
+    <div class="logo">
+      <img src="images/logo.png" alt="ZAZI">
+    </div>
+    <!-- logo End -->
 
-  <!-- 导航栏 -->
-  <nav>
+    <!-- 导航栏 -->
+    <nav>
+      <div class="container">
+        <!-- 移动端导航 -->
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="true">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">关于ZAZI</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">产品系列</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">畅销单品</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">品牌资讯</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">联系我们</a></li>
+          </ul>
+        </div>
+        <!-- 移动端导航 End -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav nav-pills">
+            <li role="presentation"><a href="index.html">网站首页</a></li>
+            <li role="presentation"><a href="#">关于ZAZI</a></li>
+            <li role="presentation"><a href="product.html">产品系列</a></li>
+            <li role="presentation" class="active"><a href="#">畅销单品</a></li>
+            <li role="presentation"><a href="#">品牌资讯</a></li>
+            <li role="presentation"><a href="#">联系我们</a></li>
+          </ul>
+        </div>
+    </nav>
+    <!-- 导航栏 End -->
+
+    <!-- 轮播图 End -->
+
+  </header>
+  <div class="product">
     <div class="container">
-      <!-- 移动端导航 -->
-      <div class="dropdown">
-        <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="true">
-          <span class="glyphicon glyphicon-menu-hamburger"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          <li><a href="#">关于ZAZI</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">产品系列</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">畅销单品</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">品牌资讯</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">联系我们</a></li>
-        </ul>
+      <!-- <div class="modal-title"> 首页 > 畅销单品</div> -->
+      <div class="d-none d-md-block breadcrumbs text-muted mb-3">
+        <span itemprop="itemListElement">
+          <a href="index.html" itemprop="item" class="home">
+            <span itemprop="name">首页</span>
+          </a></span>
+        <span class="sep">›</span>
+        <span itemprop="itemListElement"><a href="index.htmlcategory/music" itemprop="item"><span
+              itemprop="name">畅销单品</span></a></span>
+        <!-- <span class="sep">›</span> <span class="current">智能语音开关</span> -->
       </div>
-      <!-- 移动端导航 End -->
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav nav-pills">
-          <li role="presentation"><a href="index.html">网站首页</a></li>
-          <li role="presentation"><a href="#">关于ZAZI</a></li>
-          <li role="presentation"><a href="product.html">产品系列</a></li>
-          <li role="presentation" class="active"><a href="#">畅销单品</a></li>
-          <li role="presentation"><a href="#">品牌资讯</a></li>
-          <li role="presentation"><a href="#">联系我们</a></li>
-        </ul>
-      </div>
-  </nav>
-  <!-- 导航栏 End -->
-
-  <!-- 轮播图 End -->
-
-</header>
-<div class="product">
-  <div class="container">
-    <div class="modal-title"> 首页 \ 产品系列</div>
-    <div class="content">
-      <ul id="hot-event-card-box" class="clear event-show-card-warp mb15">
-        <!--         热门试用列表           -->
+      <div class="content">
+        <ul id="hot-event-card-box" class="clear event-show-card-warp mb15">
+          <!--         热门试用列表           -->
           <li>
             <a href="detail.html">
               <div class="photo">
-                <img src="https://gd3.alicdn.com/imgextra/i3/4131141025/O1CN01O4si181JRUTocOk4u_!!4131141025.jpg_400x400.jpg" alt="">
+                <img src="/images/yuyin.jpg" alt="">
               </div>
-              <div class="title"><p>智能灭蚊灯家用孕妇婴幼儿童卧室静音插电式物理捕蚊虫一扫光神器</p>
+              <div class="title">
+                <p>智能语音操控面板</p>
                 <div class="price">
-             <span>月销量:&nbsp;555</span>
-             <span>售价:  &nbsp;<span style="color:red">$50</span></span>
-            </div></div>
+                  <span>智能家居新科技</span>
+                  <span>直接替换传统零火开关</span>
+                </div>
+              </div>
             </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-<footer>
-  <div class="contact">
-    <div class="container">
-      <p>联系我们</p>
-      <hr>
-      <!-- <br> -->
-      <p>电话:0755-27784427</p>
-      <br>
-      <p>QQ:875083374</p>
-      <div class="br"></div>
-      <div class="wx">
-        <img src="images/wx.jpg" alt="微信公众号">
+          </li>
+        </ul>
       </div>
     </div>
   </div>
-  <div class="copyright">
-    <p>CopyRight 2018 All Right Reserved ZAZI外贸网站&nbsp;ICP:08118166 <a href="/A09/sitemap.html"
-                                                                       target="_blank">网站地图</a></p>
-    <p class="copyright_p">地址：深圳市宝安区福永街道凤凰社区凤凰西区242号 &nbsp;电话：0755-27784427 &nbsp;</p>
-  </div>
-</footer>
-<script>
-  // $(".scroll-cell").mouseover(function () {
-  //     $(this).find(".desc-box")
-  // }).mouseout(function () {
-  //     $(this).find(".desc-box")
-  // })
-  $(document).ready(function(){
-    $("#hot-event-card-box li").mouseover(function(){
-      console.log(1);
-      this.css("trasfrom","translateY(10px)")
-    })
-
-});
-jQuery(document).ready(function ($) {
-  $("#hot-event-card-box li").mouseover(function(){
-      console.log(a);
-      this.css("trasfrom","translateY(10px)")
-    })
+  <footer>
+    <div class="contact">
+      <div class="container">
+        <p>联系我们</p>
+        <hr>
+        <!-- <br> -->
+        <p>电话:0755-27784427</p>
+        <br>
+        <p>QQ:875083374</p>
+        <div class="br"></div>
+        <div class="wx">
+          <img src="images/wx.jpg" alt="微信公众号">
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>CopyRight 2018 All Right Reserved ZAZI外贸网站&nbsp;ICP:08118166 <a href="/A09/sitemap.html"
+          target="_blank">网站地图</a></p>
+      <p class="copyright_p">地址：深圳市宝安区福永街道凤凰社区凤凰西区242号 &nbsp;电话：0755-27784427 &nbsp;</p>
+    </div>
+  </footer>
+  <script>
+    // $(".scroll-cell").mouseover(function () {
+    //     $(this).find(".desc-box")
+    // }).mouseout(function () {
+    //     $(this).find(".desc-box")
+    // })
+  
+    jQuery(document).ready(function ($) {
+      $("#hot-event-card-box li").mouseover(function () {
+        $(this).css("transform","translateY(-10px)");
+        $(this).css('')
+      });
+      $("#hot-event-card-box li").mouseout(function () {
+        $(this).css("transform","translateY(0px)");
+      });
     });
-</script>
+  </script>
 </body>
+
 </html>
