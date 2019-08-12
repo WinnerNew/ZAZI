@@ -68,61 +68,127 @@
 
 <body>
   <header>
-    <div class="top">
+    <!-- <div class="top">
       <div class="container">
         <span class="fl top-wl">ZAZI 科技——清洁整体解决方案</span>
         <span class="fr"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>咨询电话：0755-27784427</span>
       </div>
-    </div>
+    </div> -->
 
     <!-- logo -->
-    <div class="logo">
+    <!-- <div class="logo">
       <img src="images/logo.png" alt="ZAZI">
-    </div>
+    </div> -->
     <!-- logo End -->
 
     <!-- 导航栏 -->
-    <nav>
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="images/logo.png" width="80" height="25" style="vertical-align: middle;" alt=""></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="product.html">产品系列</a></li>
+            <li  class="active"><a href="hotproduct.html">热销单品</a></li>
+            <!-- <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">畅销单品 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">智能电动窗帘</a></li>
+                <li><a href="#">智能感应灯夜灯</a></li>
+                <li><a href="#">智能晾衣架</a></li>
+                <li><a href="#">智能锁</a></li>
+                <li><a href="#">智能语音开关</a></li> -->
+                <!-- <li role="separator" class="divider"></li>
+                <li class="dropdown-header">智能语音开关</li>
+                <li><a href="#">智能锁</a></li>
+                <li><a href="#">One more separated link</a></li> -->
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">品牌资讯</a></li>
+            <li><a href="../navbar-static-top/">关于蚤知</a></li>
+            <li class="active"><a href="./">联系我们 <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- <nav class="navbar navbar-default container">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+    
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Link</a></li>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            </li>
+          </ul>
+        </div> /.navbar-collapse -->
+      <!-- </div> -->
+      <!-- /.container-fluid -->
+    <!-- </nav>  -->
+    <!-- <nav> -->
+      <!-- <div class="container"> -->
         <!-- 移动端导航 -->
-        <div class="dropdown">
+        <!-- <div class="dropdown">
           <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="true">
-            <span class="glyphicon glyphicon-menu-hamburger"></span>
+              aria-haspopup="true" aria-expanded="true">
+              <span class="glyphicon glyphicon-menu-hamburger"></span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a href="#">关于ZAZI</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">产品系列</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">畅销单品</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">品牌资讯</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">联系我们</a></li>
+              <li><a href="product.html">关于ZAZI</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="product.html">产品系列</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="hotproduct.html">畅销单品</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="product.html">品牌资讯</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="product.html">联系我们</a></li>
           </ul>
-        </div>
-        <!-- 移动端导航 End -->
-        <div id="navbar" class="navbar-collapse collapse">
+      </div> -->
+
+      <!-- 移动端导航 End -->
+      <!-- <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav nav-pills">
-            <li role="presentation"><a href="index.html">网站首页</a></li>
-            <li role="presentation"><a href="#">关于ZAZI</a></li>
-            <li role="presentation"><a href="product.html">产品系列</a></li>
-            <li role="presentation" class="active"><a href="#">畅销单品</a></li>
-            <li role="presentation"><a href="#">品牌资讯</a></li>
-            <li role="presentation"><a href="#">联系我们</a></li>
+              <li role="presentation" class="active"><a href="index.html">网站首页</a></li>
+              <li role="presentation"><a href="product.html">关于ZAZI</a></li>
+              <li role="presentation"><a href="product.html">产品系列</a></li>
+              <li role="presentation"><a href="hotproduct.html">畅销单品</a></li>
+              <li role="presentation"><a href="product.html">品牌资讯</a></li>
+              <li role="presentation"><a href="product.html">联系我们</a></li>
           </ul>
-        </div>
-    </nav>
+      </div>
+    </nav> -->
     <!-- 导航栏 End -->
 
     <!-- 轮播图 End -->
 
   </header>
-  <div class="product">
+  <div class="product" style="margin-top: 50px">
     <div class="container">
       <!-- <div class="modal-title"> 首页 > 畅销单品</div> -->
-      <div class="d-none d-md-block breadcrumbs text-muted mb-3">
+      <div class="d-none d-md-block breadcrumbs text-muted mb-3" style="margin:30px 0 20px 0">
         <span itemprop="itemListElement">
           <a href="index.html" itemprop="item" class="home">
             <span itemprop="name">首页</span>

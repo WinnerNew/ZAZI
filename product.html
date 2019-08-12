@@ -7,22 +7,56 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ZAZI科技</title>
   <link rel="stylesheet" href="assets/bootstrap-3.3.7/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/oldstyle.css">
   <link rel="stylesheet" href="css/product.css">
-  <link rel="stylesheet" href="assets/swiper/swiper.min.css">
-  <link rel='stylesheet' id='wp-block-library-css'  href='css/style.min_1.css' type='text/css' media='all' />
-  <link rel='stylesheet' id='smartideo_css-css'  href='css/smartideo_1.css' type='text/css' media='screen' />
+  <link rel='stylesheet' id='wp-block-library-css' href='css/style.min_1.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='smartideo_css-css' href='css/smartideo_1.css' type='text/css' media='screen' />
   <style id='md-style-inline-css' type='text/css'>
-    .copy-button { cursor: pointer; border: 0; font-size: 12px; text-transform: uppercase; font-weight: 500; padding: 3px 6px 3px 6px; background-color: rgba(255, 255, 255, 0.6); position: absolute; overflow: hidden; top: 5px; right: 5px; border-radius: 3px; } .copy-button:before { content: ""; display: inline-block; width: 16px; height: 16px; margin-right: 3px; background-size: contain; background-image: url("data:image/svg+xml,%3Csvg version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\' x=\'0px\' y=\'0px\' width=\'16px\' height=\'16px\' viewBox=\'888 888 16 16\' enable-background=\'new 888 888 16 16\' xml:space=\'preserve\'%3E %3Cpath fill=\'%23333333\' d=\'M903.143,891.429c0.238,0,0.44,0.083,0.607,0.25c0.167,0.167,0.25,0.369,0.25,0.607v10.857 c0,0.238-0.083,0.44-0.25,0.607s-0.369,0.25-0.607,0.25h-8.571c-0.238,0-0.44-0.083-0.607-0.25s-0.25-0.369-0.25-0.607v-2.571 h-4.857c-0.238,0-0.44-0.083-0.607-0.25s-0.25-0.369-0.25-0.607v-6c0-0.238,0.06-0.5,0.179-0.786s0.262-0.512,0.428-0.679 l3.643-3.643c0.167-0.167,0.393-0.309,0.679-0.428s0.547-0.179,0.786-0.179h3.714c0.238,0,0.44,0.083,0.607,0.25 c0.166,0.167,0.25,0.369,0.25,0.607v2.929c0.404-0.238,0.785-0.357,1.143-0.357H903.143z M898.286,893.331l-2.67,2.669h2.67V893.331 z M892.571,889.902l-2.669,2.669h2.669V889.902z M894.321,895.679l2.821-2.822v-3.714h-3.428v3.714c0,0.238-0.083,0.441-0.25,0.607 s-0.369,0.25-0.607,0.25h-3.714v5.714h4.571v-2.286c0-0.238,0.06-0.5,0.179-0.786C894.012,896.071,894.155,895.845,894.321,895.679z M902.857,902.857v-10.286h-3.429v3.714c0,0.238-0.083,0.441-0.25,0.607c-0.167,0.167-0.369,0.25-0.607,0.25h-3.714v5.715H902.857z\' /%3E %3C/svg%3E"); background-repeat: no-repeat; position: relative; top: 3px; } pre { position: relative; } pre:hover .copy-button { background-color: rgba(255, 255, 255, 0.9); }
+    .copy-button {
+      cursor: pointer;
+      border: 0;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 3px 6px 3px 6px;
+      background-color: rgba(255, 255, 255, 0.6);
+      position: absolute;
+      overflow: hidden;
+      top: 5px;
+      right: 5px;
+      border-radius: 3px;
+    }
+
+    .copy-button:before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 3px;
+      background-size: contain;
+      background-image: url("data:image/svg+xml,%3Csvg version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\' x=\'0px\' y=\'0px\' width=\'16px\' height=\'16px\' viewBox=\'888 888 16 16\' enable-background=\'new 888 888 16 16\' xml:space=\'preserve\'%3E %3Cpath fill=\'%23333333\' d=\'M903.143,891.429c0.238,0,0.44,0.083,0.607,0.25c0.167,0.167,0.25,0.369,0.25,0.607v10.857 c0,0.238-0.083,0.44-0.25,0.607s-0.369,0.25-0.607,0.25h-8.571c-0.238,0-0.44-0.083-0.607-0.25s-0.25-0.369-0.25-0.607v-2.571 h-4.857c-0.238,0-0.44-0.083-0.607-0.25s-0.25-0.369-0.25-0.607v-6c0-0.238,0.06-0.5,0.179-0.786s0.262-0.512,0.428-0.679 l3.643-3.643c0.167-0.167,0.393-0.309,0.679-0.428s0.547-0.179,0.786-0.179h3.714c0.238,0,0.44,0.083,0.607,0.25 c0.166,0.167,0.25,0.369,0.25,0.607v2.929c0.404-0.238,0.785-0.357,1.143-0.357H903.143z M898.286,893.331l-2.67,2.669h2.67V893.331 z M892.571,889.902l-2.669,2.669h2.669V889.902z M894.321,895.679l2.821-2.822v-3.714h-3.428v3.714c0,0.238-0.083,0.441-0.25,0.607 s-0.369,0.25-0.607,0.25h-3.714v5.714h4.571v-2.286c0-0.238,0.06-0.5,0.179-0.786C894.012,896.071,894.155,895.845,894.321,895.679z M902.857,902.857v-10.286h-3.429v3.714c0,0.238-0.083,0.441-0.25,0.607c-0.167,0.167-0.369,0.25-0.607,0.25h-3.714v5.715H902.857z\' /%3E %3C/svg%3E");
+      background-repeat: no-repeat;
+      position: relative;
+      top: 3px;
+    }
+
+    pre {
+      position: relative;
+    }
+
+    pre:hover .copy-button {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
   </style>
-  <link rel='stylesheet' id='nc-popup-css'  href='css/nc-popup_1.css' type='text/css' media='all' />
-  <link rel='stylesheet' id='ncLightgalleryCss-css'  href='css/lightgallery.min.css' type='text/css' media='all' />
-  <link rel='stylesheet' id='nicetheme-iconfont-css'  href='css/iconfont_1.css' type='text/css' media='all' />
-  <link rel='stylesheet' id='nicetheme-nicetheme-css'  href='css/nicetheme_1.css' type='text/css' media='all' />
-  <link rel='stylesheet' id='nicetheme-style-css'  href='css/style_1.css' type='text/css' media='all' />
-  <link rel='stylesheet' id='nicetheme-dark-mode-css'  href='css/darkmode_1.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='nc-popup-css' href='css/nc-popup_1.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='ncLightgalleryCss-css' href='css/lightgallery.min.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='nicetheme-iconfont-css' href='css/iconfont_1.css' type='text/css' media='all' />
+  <!-- <link rel='stylesheet' id='nicetheme-nicetheme-css' href='css/nicetheme_1.css' type='text/css' media='all' /> -->
+  <link rel='stylesheet' id='nicetheme-style-css' href='css/style_1.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='nicetheme-dark-mode-css' href='css/darkmode_1.css' type='text/css' media='all' />
   <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
   <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
   <!--[if lt IE 9]>
@@ -33,25 +67,67 @@
 </head>
 
 <body>
-<header>
-  <div class="top">
-    <div class="container">
-      <span class="fl top-wl">ZAZI 科技——清洁整体解决方案</span>
-      <span class="fr"><span class="glyphicon glyphicon-earphone"
-                             aria-hidden="true"></span>咨询电话：0755-27784427</span>
-    </div>
-  </div>
+  <header>
+    <!-- <div class="top">
+      <div class="container">
+        <span class="fl top-wl">ZAZI 科技——清洁整体解决方案</span>
+        <span class="fr"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>咨询电话：0755-27784427</span>
+      </div>
+    </div> -->
 
-  <!-- logo -->
-  <div class="logo">
+    <!-- logo -->
+    <!-- <div class="logo">
     <img src="images/logo.png" alt="ZAZI">
-  </div>
-  <!-- logo End -->
+  </div> -->
+    <!-- logo End -->
 
-  <!-- 导航栏 -->
-  <nav>
-    <div class="container">
-      <!-- <div class="navbar-header">
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="images/logo.png" width="80" height="25"
+              style="vertical-align: middle;" alt=""></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">首页</a></li>
+            <li class="active"><a href="product.html">产品系列</a></li>
+            <li><a href="hotproduct.html">热销单品</a></li>
+            <!-- <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">畅销单品 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">智能电动窗帘</a></li>
+                <li><a href="#">智能感应灯夜灯</a></li>
+                <li><a href="#">智能晾衣架</a></li>
+                <li><a href="#">智能锁</a></li>
+                <li><a href="#">智能语音开关</a></li> -->
+                <!-- <li role="separator" class="divider"></li>
+              <li class="dropdown-header">智能语音开关</li>
+              <li><a href="#">智能锁</a></li>
+              <li><a href="#">One more separated link</a></li> -->
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">品牌资讯</a></li>
+            <li><a href="../navbar-static-top/">关于蚤知</a></li>
+            <li class="active"><a href="./">联系我们 <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- <nav>
+    <div class="container"> -->
+    <!-- <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
               aria-expanded="false" aria-controls="navbar">
               <span class="sr-only"></span>
@@ -63,8 +139,8 @@
           <a class="navbar-brand" href="#">导航菜单</a>
       </div> -->
 
-      <!-- 移动端导航 -->
-      <div class="dropdown">
+    <!-- 移动端导航 -->
+    <!-- <div class="dropdown">
         <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="true">
           <span class="glyphicon glyphicon-menu-hamburger"></span>
@@ -80,25 +156,25 @@
           <li role="separator" class="divider"></li>
           <li><a href="#">联系我们</a></li>
         </ul>
-      </div>
-      <!--<div class="mb_nav dropdown">-->
-      <!--<span class="glyphicon glyphicon-search fl"></span>-->
-      <!--<span class="glyphicon glyphicon-menu-hamburger fr collapsed dropdown-toggle" data-toggle="collapse"-->
-      <!--data-target="#box" aria-expanded="false"></span>-->
-      <!--<ul id="box" aria-expanded="false" class="collapse" style="height: 0px;">-->
-      <!--<a href="#"></a>-->
-      <!--<li role="presentation">关于ZAZI</li></a>-->
-      <!--<a href="#"></a>-->
-      <!--<li role="presentation">产品系列</li></a>-->
-      <!--<a href="#"></a>-->
-      <!--<li role="presentation">畅销单品</li></a>-->
-      <!--<a href="#"></a>-->
-      <!--<li role="presentation">品牌资讯</li></a>-->
-      <!--<a href="#"></a>-->
-      <!--<li role="presentation">联系我们</li></a>-->
-      <!--</ul>-->
-      <!--</div>-->
-      <!-- <nav class="navbar navbar-inverse">
+      </div> -->
+    <!--<div class="mb_nav dropdown">-->
+    <!--<span class="glyphicon glyphicon-search fl"></span>-->
+    <!--<span class="glyphicon glyphicon-menu-hamburger fr collapsed dropdown-toggle" data-toggle="collapse"-->
+    <!--data-target="#box" aria-expanded="false"></span>-->
+    <!--<ul id="box" aria-expanded="false" class="collapse" style="height: 0px;">-->
+    <!--<a href="#"></a>-->
+    <!--<li role="presentation">关于ZAZI</li></a>-->
+    <!--<a href="#"></a>-->
+    <!--<li role="presentation">产品系列</li></a>-->
+    <!--<a href="#"></a>-->
+    <!--<li role="presentation">畅销单品</li></a>-->
+    <!--<a href="#"></a>-->
+    <!--<li role="presentation">品牌资讯</li></a>-->
+    <!--<a href="#"></a>-->
+    <!--<li role="presentation">联系我们</li></a>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!-- <nav class="navbar navbar-inverse">
               <div class="container-fluid">
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -122,8 +198,8 @@
                 </div>
               </div>
             </nav> -->
-      <!-- 移动端导航 End -->
-      <div id="navbar" class="navbar-collapse collapse">
+    <!-- 移动端导航 End -->
+    <!-- <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav nav-pills">
           <li role="presentation"><a href="index.html">网站首页</a></li>
           <li role="presentation"><a href="product.html">关于ZAZI</a></li>
@@ -133,171 +209,187 @@
           <li role="presentation"><a href="product.html">联系我们</a></li>
         </ul>
       </div>
-  </nav>
-  <!-- 导航栏 End -->
+  </nav> -->
+    <!-- 导航栏 End -->
 
 
-</header>
-<main class="py-4 py-md-5 h-v-75">
+  </header>
+  <main class="py-4 py-md-5 h-v-75" style="margin-top: 50px">
 
-  <div class="container">
-    <div class="modal-title"> 首页 \ 产品系列</div>
-    <h1 class="h2 mb-4">专题推荐</h1>
-    <div class="row list-grouped">
-      <div class="col-md-6">
-        <div class="list-item block">
-          <div class="media media-21x9">
-            <a class="media-content" href="detail.html" target="_blank" style="background-image:url(images/2017101616302082.jpg)"></a>
-            <div class="media-overlay overlay-top p-3">
-              <small><i class="text-xl iconfont icon-file-text-line"></i></small><span class="h1 font-theme">26</span>
-            </div>
-          </div>
-          <div class="list-content">
-            <div class="list-body ">
-              <a href="index.htmlspecial/youzhiwenzhang" target="_blank" class="list-title text-md">优质文章</a>
-              <div class="list-desc text-xs text-muted h-2x mt-2">优质的短篇文章(在线阅读素材)</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="list-item block">
-          <div class="media media-21x9">
-            <a class="media-content" href="index.htmlspecial/youyanvsheng" target="_blank" style="background-image:url(images/2017012800543666.jpg)"></a>
-            <div class="media-overlay overlay-top p-3">
-              <small><i class="text-xl iconfont icon-file-text-line"></i></small><span class="h1 font-theme">30</span>
-            </div>
-          </div>
-          <div class="list-content">
-            <div class="list-body ">
-              <a href="index.htmlspecial/youyanvsheng" target="_blank" class="list-title text-md">优雅女声</a>
-              <div class="list-desc text-xs text-muted h-2x mt-2">音乐中优雅的女声</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="list-item block">
-          <div class="media media-21x9">
-            <a class="media-content" href="index.htmlspecial/zhumianqu" target="_blank" style="background-image:url(images/sleep.jpg)"></a>
-            <div class="media-overlay overlay-top p-3">
-              <small><i class="text-xl iconfont icon-file-text-line"></i></small><span class="h1 font-theme">7</span>
-            </div>
-          </div>
-          <div class="list-content">
-            <div class="list-body ">
-              <a href="index.htmlspecial/zhumianqu" target="_blank" class="list-title text-md">助眠曲</a>
-              <div class="list-desc text-xs text-muted h-2x mt-2">助眠曲推荐,愿你有一场好梦</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="list-item block">
-          <div class="media media-21x9">
-            <a class="media-content" href="index.htmlspecial/gufenggequ" target="_blank" style="background-image:url(images/2018062217015942.jpg)"></a>
-            <div class="media-overlay overlay-top p-3">
-              <small><i class="text-xl iconfont icon-file-text-line"></i></small><span class="h1 font-theme">11</span>
-            </div>
-          </div>
-          <div class="list-content">
-            <div class="list-body ">
-              <a href="index.htmlspecial/gufenggequ" target="_blank" class="list-title text-md">古风歌曲</a>
-              <div class="list-desc text-xs text-muted h-2x mt-2"> 古风歌曲——赠你一场穿越时光的浪漫幻想</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="list-item block">
-          <div class="media media-21x9">
-            <a class="media-content" href="index.htmlspecial/da-qin-zui-pao-di-guo" target="_blank" style="background-image:url(images/2018011615020369.png)"></a>
-            <div class="media-overlay overlay-top p-3">
-              <small><i class="text-xl iconfont icon-file-text-line"></i></small><span class="h1 font-theme">5</span>
-            </div>
-          </div>
-          <div class="list-content">
-            <div class="list-body ">
-              <a href="index.htmlspecial/da-qin-zui-pao-di-guo" target="_blank" class="list-title text-md">大秦嘴炮帝国</a>
-              <div class="list-desc text-xs text-muted h-2x mt-2">用“嘴炮”的方式打开《大秦帝国》</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="list-item block">
-          <div class="media media-21x9">
-            <a class="media-content" href="index.htmlspecial/da-ming-gui-chu-wang-chao" target="_blank" style="background-image:url(images/2018120621572615.jpg)"></a>
-            <div class="media-overlay overlay-top p-3">
-              <small><i class="text-xl iconfont icon-file-text-line"></i></small><span class="h1 font-theme">3</span>
-            </div>
-          </div>
-          <div class="list-content">
-            <div class="list-body ">
-              <a href="index.htmlspecial/da-ming-gui-chu-wang-chao" target="_blank" class="list-title text-md">大明鬼畜王朝</a>
-              <div class="list-desc text-xs text-muted h-2x mt-2">用鬼畜的方式打开“大明王朝”</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="list-item block">
-          <div class="media media-21x9">
-            <a class="media-content" href="index.htmlspecial/winsoftwares" target="_blank" style="background-image:url(images/2017091002292659.jpg)"></a>
-            <div class="media-overlay overlay-top p-3">
-              <small><i class="text-xl iconfont icon-file-text-line"></i></small><span class="h1 font-theme">7</span>
-            </div>
-          </div>
-          <div class="list-content">
-            <div class="list-body ">
-              <a href="index.htmlspecial/winsoftwares" target="_blank" class="list-title text-md">Windows软件推荐</a>
-              <div class="list-desc text-xs text-muted h-2x mt-2">好用的Windows软件推荐</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="list-item block">
-          <div class="media media-21x9">
-            <a class="media-content" href="index.htmlspecial/android" target="_blank" style="background-image:url(images/adrien-296945.jpg)"></a>
-            <div class="media-overlay overlay-top p-3">
-              <small><i class="text-xl iconfont icon-file-text-line"></i></small><span class="h1 font-theme">2</span>
-            </div>
-          </div>
-          <div class="list-content">
-            <div class="list-body ">
-              <a href="index.htmlspecial/android" target="_blank" class="list-title text-md">Android软件</a>
-              <div class="list-desc text-xs text-muted h-2x mt-2"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
-<footer>
-  <div class="contact">
     <div class="container">
-      <p>联系我们</p>
-      <hr>
-      <!-- <br> -->
-      <p>电话:0755-27784427</p>
-      <br>
-      <p>QQ:875083374</p>
-      <div class="br"></div>
-      <div class="wx">
-        <img src="images/wx.jpg" alt="微信公众号">
+      <!-- <div class="modal-title"> 首页 \ 产品系列</div> -->
+      <h1 class="h2 mb-4">专题推荐</h1>
+      <div class="row list-grouped">
+        <div class="col-md-6">
+          <div class="list-item block">
+            <div class="media media-21x9">
+              <a class="media-content" href="detail.html" target="_blank"
+                style="background-image:url(images/2017101616302082.jpg)"></a>
+              <div class="media-overlay overlay-top p-3">
+                <small><i class="text-xl iconfont icon-file-text-line"></i></small><span class="h1 font-theme">26</span>
+              </div>
+            </div>
+            <div class="list-content">
+              <div class="list-body ">
+                <a href="index.htmlspecial/youzhiwenzhang" target="_blank" class="list-title text-md">优质文章</a>
+                <div class="list-desc text-xs text-muted h-2x mt-2">优质的短篇文章(在线阅读素材)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="list-item block">
+            <div class="media media-21x9">
+              <a class="media-content" href="index.htmlspecial/youyanvsheng" target="_blank"
+                style="background-image:url(images/2017012800543666.jpg)"></a>
+              <div class="media-overlay overlay-top p-3">
+                <small><i class="text-xl iconfont icon-file-text-line"></i></small><span class="h1 font-theme">30</span>
+              </div>
+            </div>
+            <div class="list-content">
+              <div class="list-body ">
+                <a href="index.htmlspecial/youyanvsheng" target="_blank" class="list-title text-md">优雅女声</a>
+                <div class="list-desc text-xs text-muted h-2x mt-2">音乐中优雅的女声</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="list-item block">
+            <div class="media media-21x9">
+              <a class="media-content" href="index.htmlspecial/zhumianqu" target="_blank"
+                style="background-image:url(images/sleep.jpg)"></a>
+              <div class="media-overlay overlay-top p-3">
+                <small><i class="text-xl iconfont icon-file-text-line"></i></small><span class="h1 font-theme">7</span>
+              </div>
+            </div>
+            <div class="list-content">
+              <div class="list-body ">
+                <a href="index.htmlspecial/zhumianqu" target="_blank" class="list-title text-md">助眠曲</a>
+                <div class="list-desc text-xs text-muted h-2x mt-2">助眠曲推荐,愿你有一场好梦</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="list-item block">
+            <div class="media media-21x9">
+              <a class="media-content" href="index.htmlspecial/gufenggequ" target="_blank"
+                style="background-image:url(images/2018062217015942.jpg)"></a>
+              <div class="media-overlay overlay-top p-3">
+                <small><i class="text-xl iconfont icon-file-text-line"></i></small><span class="h1 font-theme">11</span>
+              </div>
+            </div>
+            <div class="list-content">
+              <div class="list-body ">
+                <a href="index.htmlspecial/gufenggequ" target="_blank" class="list-title text-md">古风歌曲</a>
+                <div class="list-desc text-xs text-muted h-2x mt-2"> 古风歌曲——赠你一场穿越时光的浪漫幻想</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="list-item block">
+            <div class="media media-21x9">
+              <a class="media-content" href="index.htmlspecial/da-qin-zui-pao-di-guo" target="_blank"
+                style="background-image:url(images/2018011615020369.png)"></a>
+              <div class="media-overlay overlay-top p-3">
+                <small><i class="text-xl iconfont icon-file-text-line"></i></small><span class="h1 font-theme">5</span>
+              </div>
+            </div>
+            <div class="list-content">
+              <div class="list-body ">
+                <a href="index.htmlspecial/da-qin-zui-pao-di-guo" target="_blank" class="list-title text-md">大秦嘴炮帝国</a>
+                <div class="list-desc text-xs text-muted h-2x mt-2">用“嘴炮”的方式打开《大秦帝国》</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="list-item block">
+            <div class="media media-21x9">
+              <a class="media-content" href="index.htmlspecial/da-ming-gui-chu-wang-chao" target="_blank"
+                style="background-image:url(images/2018120621572615.jpg)"></a>
+              <div class="media-overlay overlay-top p-3">
+                <small><i class="text-xl iconfont icon-file-text-line"></i></small><span class="h1 font-theme">3</span>
+              </div>
+            </div>
+            <div class="list-content">
+              <div class="list-body ">
+                <a href="index.htmlspecial/da-ming-gui-chu-wang-chao" target="_blank"
+                  class="list-title text-md">大明鬼畜王朝</a>
+                <div class="list-desc text-xs text-muted h-2x mt-2">用鬼畜的方式打开“大明王朝”</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="list-item block">
+            <div class="media media-21x9">
+              <a class="media-content" href="index.htmlspecial/winsoftwares" target="_blank"
+                style="background-image:url(images/2017091002292659.jpg)"></a>
+              <div class="media-overlay overlay-top p-3">
+                <small><i class="text-xl iconfont icon-file-text-line"></i></small><span class="h1 font-theme">7</span>
+              </div>
+            </div>
+            <div class="list-content">
+              <div class="list-body ">
+                <a href="index.htmlspecial/winsoftwares" target="_blank" class="list-title text-md">Windows软件推荐</a>
+                <div class="list-desc text-xs text-muted h-2x mt-2">好用的Windows软件推荐</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="list-item block">
+            <div class="media media-21x9">
+              <a class="media-content" href="index.htmlspecial/android" target="_blank"
+                style="background-image:url(images/adrien-296945.jpg)"></a>
+              <div class="media-overlay overlay-top p-3">
+                <small><i class="text-xl iconfont icon-file-text-line"></i></small><span class="h1 font-theme">2</span>
+              </div>
+            </div>
+            <div class="list-content">
+              <div class="list-body ">
+                <a href="index.htmlspecial/android" target="_blank" class="list-title text-md">Android软件</a>
+                <div class="list-desc text-xs text-muted h-2x mt-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="copyright">
-    <p>CopyRight 2018 All Right Reserved ZAZI外贸网站&nbsp;ICP:08118166 <a href="/A09/sitemap.html"
-                                                                       target="_blank">网站地图</a></p>
-    <p class="copyright_p">地址：深圳市宝安区福永街道凤凰社区凤凰西区242号 &nbsp;电话：0755-27784427 &nbsp;</p>
-  </div>
-</footer>
-<!-- <script>
+  </main>
+  <footer>
+    <div class="contact">
+      <div class="container">
+        <p>联系我们</p>
+        <hr>
+        <!-- <br> -->
+        <p>电话:0755-27784427</p>
+        <br>
+        <p>QQ:875083374</p>
+        <div class="br"></div>
+        <div class="wx">
+          <img src="images/wx.jpg" alt="微信公众号">
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>CopyRight 2018 All Right Reserved ZAZI外贸网站&nbsp;ICP:08118166 <a href="/A09/sitemap.html"
+          target="_blank">网站地图</a></p>
+      <p class="copyright_p">地址：深圳市宝安区福永街道凤凰社区凤凰西区242号 &nbsp;电话：0755-27784427 &nbsp;</p>
+    </div>
+  </footer>
+  <!-- <script>
   $('.list-title).removeAttr("href");
 </script> -->
+<script src="assets/jquery/dist/jquery.min.js"></script>
+<script src="assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="assets/swiper/swiper.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/dod.min.js"></script>
+<script src="js/js.js"></script>
 </body>
+
 </html>

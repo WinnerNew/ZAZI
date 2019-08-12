@@ -63,7 +63,7 @@
   <link rel='stylesheet' id='nc-popup-css' href='css/nc-popup_2.css' type='text/css' media='all' />
   <link rel='stylesheet' id='ncLightgalleryCss-css' href='css/lightgallery.min_1.css' type='text/css' media='all' />
   <link rel='stylesheet' id='nicetheme-iconfont-css' href='css/iconfont_2.css' type='text/css' media='all' />
-  <link rel='stylesheet' id='nicetheme-nicetheme-css' href='css/nicetheme_2.css' type='text/css' media='all' />
+  <!-- <link rel='stylesheet' id='nicetheme-nicetheme-css' href='css/nicetheme_2.css' type='text/css' media='all' /> -->
   <link rel='stylesheet' id='nicetheme-style-css' href='css/style_2.css' type='text/css' media='all' />
   <link rel='stylesheet' id='nicetheme-dark-mode-css' href='css/darkmode_2.css' type='text/css' media='all' />
   <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
@@ -77,22 +77,61 @@
 
 <body>
   <header>
-    <div class="top">
+      <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="images/logo.png" width="80" height="25" style="vertical-align: middle;" alt=""></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="product.html">产品系列</a></li>
+                <li  class="active"><a href="hotproduct.html">热销单品</a></li>
+                <!-- <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">畅销单品 <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">智能电动窗帘</a></li>
+                    <li><a href="#">智能感应灯夜灯</a></li>
+                    <li><a href="#">智能晾衣架</a></li>
+                    <li><a href="#">智能锁</a></li>
+                    <li><a href="#">智能语音开关</a></li> -->
+                    <!-- <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">智能语音开关</li>
+                    <li><a href="#">智能锁</a></li>
+                    <li><a href="#">One more separated link</a></li> -->
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="../navbar/">品牌资讯</a></li>
+                <li><a href="../navbar-static-top/">关于蚤知</a></li>
+                <li class="active"><a href="./">联系我们 <span class="sr-only">(current)</span></a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
+    <!-- <div class="top">
       <div class="container">
         <span class="fl top-wl">ZAZI 科技——清洁整体解决方案</span>
         <span class="fr"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>咨询电话：0755-27784427</span>
       </div>
-    </div>
+    </div> -->
 
     <!-- logo -->
-    <div class="logo">
+    <!-- <div class="logo">
       <img src="images/logo.png" alt="ZAZI">
-    </div>
+    </div> -->
     <!-- logo End -->
 
     <!-- 导航栏 -->
-    <nav>
-      <div class="container">
+    <!-- <nav>
+      <div class="container"> -->
         <!-- <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
               aria-expanded="false" aria-controls="navbar">
@@ -106,7 +145,7 @@
       </div> -->
 
         <!-- 移动端导航 -->
-        <div class="dropdown">
+        <!-- <div class="dropdown">
           <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="true">
             <span class="glyphicon glyphicon-menu-hamburger"></span>
@@ -122,7 +161,7 @@
             <li role="separator" class="divider"></li>
             <li><a href="product.html">联系我们</a></li>
           </ul>
-        </div>
+        </div> -->
         <!--<div class="mb_nav dropdown">-->
         <!--<span class="glyphicon glyphicon-search fl"></span>-->
         <!--<span class="glyphicon glyphicon-menu-hamburger fr collapsed dropdown-toggle" data-toggle="collapse"-->
@@ -165,7 +204,7 @@
               </div>
             </nav> -->
         <!-- 移动端导航 End -->
-        <div id="navbar" class="navbar-collapse collapse">
+        <!-- <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav nav-pills">
             <li role="presentation"><a href="index.html">网站首页</a></li>
             <li role="presentation"><a href="product.html">关于ZAZI</a></li>
@@ -175,17 +214,17 @@
             <li role="presentation"><a href="product.html">联系我们</a></li>
           </ul>
         </div>
-    </nav>
+    </nav> -->
     <!-- 导航栏 End -->
 
 
 
   </header>
-  <main class="py-4 py-md-5" style="transform: none;">
+  <main class="py-4 py-md-5" style="transform: none;margin-top: 50px">
     <div class="container" style="transform: none;">
-      <div class="d-none d-md-block breadcrumbs text-muted mb-3"><span itemprop="itemListElement"><a href="index.html"
+      <div class="d-none d-md-block breadcrumbs text-muted mb-3" style="margin: 30px 0 20px 0"><span itemprop="itemListElement"><a href="index.html"
             itemprop="item" class="home"><span itemprop="name">首页</span></a></span> <span class="sep">›</span> <span
-          itemprop="itemListElement"><a href="index.htmlcategory/music" itemprop="item"><span
+          itemprop="itemListElement"><a href="detail.html" itemprop="item"><span
               itemprop="name">产品详情</span></a></span> <span class="sep">›</span> <span
           class="current">智能语音操控面板</span></div>
       <div class="row no-gutters" style="transform: none;">
@@ -197,7 +236,7 @@
                   <a href="detail.html" target="_blank"><span class="badge badge-primary">产品详情</span></a>
                 </div>
                 <h1 class="h3 mb-3 title">智能语音操控面板</h1>
-                <div class="meta d-flex align-items-center text-xs text-muted">
+                <!-- <div class="meta d-flex align-items-center text-xs text-muted">
                   <div>
                     <time class="d-inline-block">2018-07-11 1:04:13</time>
                   </div>
@@ -211,7 +250,7 @@
                       <small class="like-count">16</small>
                     </a>
                   </div>
-                </div>
+                </div> -->
                 <!--div class="border-theme bg-primary"></div-->
               </div>
               <div class="post-content">
@@ -291,7 +330,7 @@
 
             </div>
           </div>
-          <div class="post-tags block d-flex text-sm p-4 "><i
+          <!-- <div class="post-tags block d-flex text-sm p-4 "><i
               class="text-xl text-primary iconfont icon-price-tag--line mr-3"></i>
             <div class="flex-fill"><span class="d-inline-block text-muted mr-2"># <a
                   href="index.htmltag/%e4%ba%94%e6%9c%88%e5%a4%a9" rel="tag">五月天</a></span><span
@@ -302,7 +341,7 @@
                   rel="tag">梦想</a></span><span class="d-inline-block text-muted mr-2"># <a
                   href="index.htmltag/%e7%83%ad%e8%a1%80" rel="tag">热血</a></span>
             </div>
-          </div>
+          </div> -->
           
           <div class="paid-share my-4 my-lg-0 d-lg-none">
             <br>

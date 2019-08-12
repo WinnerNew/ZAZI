@@ -7,8 +7,8 @@ ul{list-style:none;}
     header{}
     .mb_nav{display: none}
     .logo{margin-top: 18px;}
-    .navbar{ margin-top:15px;  min-height: 50px;  border-bottom: 3px solid #01AF63;margin-bottom: -2px;background-color: #01AF63;}
-    #myNavbar{border-color: none;}
+    /* .navbar{ margin-top:15px;  min-height: 50px;  border-bottom: 3px solid #01AF63;margin-bottom: -2px;background-color: #01AF63;} */
+    /* #myNavbar{border-color: none;}
     .navbar-nav > li{}
     .navbar-nav > li:first-child { border-left:0; }
     .navbar-nav > li:last-child{}
@@ -23,30 +23,29 @@ ul{list-style:none;}
     .navbar-default .navbar-nav > .open > a:hover,
     .navbar-default .navbar-nav > .open > a:focus {
         background-color: #01AF63; color: #fff; }
-    .navbar-brand{display: none;}
+    .navbar-brand{display: none;} */
 
-    .nav_small{ background-color:#fff;  padding: 10px 0px; padding-bottom: 15px; border-radius: 0px; border: none; box-shadow: none;border-top: 3px solid #01AF63;}
+    /* .nav_small{ background-color:#fff;  padding: 10px 0px; padding-bottom: 15px; border-radius: 0px; border: none; box-shadow: none;border-top: 3px solid #01AF63;}
     .nav_small > li{}
     .nav_small > li > a{line-height:20px; padding: 7px 0px; text-align: center; color: #434343; font-size: 13px;}
     .nav_small > li > a:hover{color: #01AF63; background-color: #01AF63; color: #fff; }
     #app_menudown,#small_search{ display:none; }
-    .index_left_nav,.footer_nav{display:none; }
+    .index_left_nav,.footer_nav{display:none; } */
 }
 
 
 /*小屏幕*/
 @media screen and (max-width: 768px) {
-    .mb_nav{display: block}
+    /* .mb_nav{display: block}
     nav {
         border: 0;
     }
     nav .container{
         background:rgba(0,0,0,0.8);
         color:#fff;
-        /* height: 20px; */
-    }
+    } */
     .top-wl{display: none;}
-    .navbar{min-height: 50px; margin-top:10px; background-color: #01AF63;}
+    /* .navbar{min-height: 50px; margin-top:10px; background-color: #01AF63;}
     .navbar-default .navbar-brand {color: #fff; font-size: 16px;}
     .navbar-default .navbar-brand:hover,
     .navbar-default .navbar-brand:focus {color: #fff;}
@@ -71,7 +70,7 @@ ul{list-style:none;}
     .navbar-default .navbar-nav > .open > a:hover,
     .navbar-default .navbar-nav > .open > a:focus,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
-        background-color: #2ECA86; color: #fff;}
+        background-color: #2ECA86; color: #fff;} */
 
     header{}
     .top_name,.home-btn,.page_bg{display: none;}
@@ -109,19 +108,19 @@ ul{list-style:none;}
 }
 
 @media screen and (max-width: 767px) {
-    .mb_nav{display: block;}
+    /* .mb_nav{display: block;} */
     .copyright_p{ display:none;}
     .cp_banner .glyphicon{display: none}
 }
 
 /*440px到768px*/
 @media screen and (min-width:440px) and (max-width:768px) {
-    nav .container{
+    /* nav .container{
         background:rgba(0,0,0,0.8);
         color:#fff;
-        /* height: 20px; */
+     
     }
-    .mb_nav{display: block;clear: both;}
+    .mb_nav{display: block;clear: both;} */
     .col-mm-1, .col-mm-2, .col-mm-3, .col-mm-4, .col-mm-5, .col-mm-6, .col-mm-7, .col-mm-8, .col-mm-9, .col-mm-10, .col-mm-11, .col-mm-12 {
         float: left;
     }
@@ -167,8 +166,8 @@ ul{list-style:none;}
 }
 
 @media screen and (max-width: 414px) {
-    nav .container{background:rgba(0,0,0,0.8);color:#fff;}
-    .mb_nav{display: block}
+    /* nav .container{background:rgba(0,0,0,0.8);color:#fff;}
+    .mb_nav{display: block} */
     .glyphicon-search {display: none;}
     .logo{max-width:280px;}
     .cp_banner .glyphicon{display: none}
@@ -229,7 +228,7 @@ a.about_more:hover{color: #fff; background: #01af63; text-decoration: none;}
 .about_contents span{color: aqua;}
 
 /* 产品展示 */
-.cp_banner {width: 100%;height: 320px;overflow: hidden;position: relative}
+.cp_banner {width: 100%;overflow: hidden;position: relative}
 .cp_banner .cp_ul{width: 2000px;overflow: hidden;margin: 0 auto;position: relative;left: 0;transition: left 0.5s;padding: 0;}
 .cp_banner .cp_li {    height: 318px;
     width: 285px;
