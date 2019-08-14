@@ -19,14 +19,19 @@
   <script src="js/common.js"></script>
   <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
   <style>
+    .productli{
+      margin-bottom: 15px;
+    }
     #hot-event-card-box a {
       display: block;
     }
-    #hot-event-card-box li {
+    #hot-event-card-box .productli {
       transition: all 0.2s ease 0s;
+      display: block;
+      margin-bottom: 10px;
       /* border-radius:10px; */
     }
-    #hot-event-card-box li:hover {
+    #hot-event-card-box .productli:hover {
       transform: translate(-2px);
       /* transform: translateX(-7px); */
       box-shadow: 3px 2px 5px #888888;
@@ -194,14 +199,13 @@
             <span itemprop="name">首页</span>
           </a></span>
         <span class="sep">›</span>
-        <span itemprop="itemListElement"><a href="index.htmlcategory/music" itemprop="item"><span
+        <span itemprop="itemListElement"><a href="hotproduct.html" itemprop="item"><span
               itemprop="name">畅销单品</span></a></span>
         <!-- <span class="sep">›</span> <span class="current">智能语音开关</span> -->
       </div>
       <div class="content">
-        <ul id="hot-event-card-box" class="clear event-show-card-warp mb15">
-          <!--         热门试用列表           -->
-          <li>
+        <!-- <ul id="hot-event-card-box" class="clear event-show-card-warp mb15">
+          <li class="col-sm-4">
             <a href="detail.html">
               <div class="photo">
                 <img src="images/yuyin.jpg" alt="">
@@ -215,7 +219,22 @@
               </div>
             </a>
           </li>
-        </ul>
+        </ul> -->
+        <% for(var i = 0; i < list.length; i++) {%>
+        <div class="col-xs-6 col-sm-4 col-md-3 productli">
+            <a href="detail.html?id=<%= list[i].id %>">
+                <div class="photo">
+                  <img src="images/<%= list[i].img %>" alt="">
+                </div>
+                <div class="title">
+                  <p><%= list[i].title %></p>
+                  <div class="price">
+                    <span><%= list[i].detail %></span>
+                  </div>
+                </div>
+              </a>
+        </div>
+        <% } %>
       </div>
     </div>
   </div>

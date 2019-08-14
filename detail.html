@@ -226,7 +226,7 @@
             itemprop="item" class="home"><span itemprop="name">首页</span></a></span> <span class="sep">›</span> <span
           itemprop="itemListElement"><a href="detail.html" itemprop="item"><span
               itemprop="name">产品详情</span></a></span> <span class="sep">›</span> <span
-          class="current">智能语音操控面板</span></div>
+          class="current"><%= item.title %></span></div>
       <div class="row no-gutters" style="transform: none;">
         <div class="col-lg-8">
           <div class="post card">
@@ -235,7 +235,9 @@
                 <div class="d-block texindex.htmlcategory/musict-sm mt-md-1 mb-2 mb-md-3">
                   <a href="detail.html" target="_blank"><span class="badge badge-primary">产品详情</span></a>
                 </div>
-                <h1 class="h3 mb-3 title">智能语音操控面板</h1>
+                <!-- <h1 class="h3 mb-3 title">智能语音操控面板</h1> -->
+                <h1 class="h3 mb-3 title"><%= item.title %></h1>
+
                 <!-- <div class="meta d-flex align-items-center text-xs text-muted">
                   <div>
                     <time class="d-inline-block">2018-07-11 1:04:13</time>
@@ -256,7 +258,10 @@
               <div class="post-content">
                 <div class="nc-light-gallery"></div>
                 <div id="J_DivItemDesc" class="content">
-                  <img align="absmiddle" src="images/1.jpg">
+                    <% for(var i = 0; i < item.picture.length; i++) {%>
+                      <img align="absmiddle" src="images/<%= item.picture[i] %>">
+                      <% } %>
+                  <!-- <img align="absmiddle" src="images/1.jpg">
                   <img align="absmiddle" src="images/2.jpg">
                   <img align="absmiddle" src="images/3.jpg">
                   <img align="absmiddle" src="images/4.jpg">
@@ -266,7 +271,7 @@
                   <img align="absmiddle" src="images/8.jpg">
                   <img align="absmiddle" src="images/9.jpg">
                   <img align="absmiddle" src="images/10.jpg">
-                  <img align="absmiddle" src="images/11.jpg">
+                  <img align="absmiddle" src="images/11.jpg"> -->
                 </div>
               </div>
 

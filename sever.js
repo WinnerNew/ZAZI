@@ -5,19 +5,28 @@ const mime = require('mime');
 const url = require('url');
 const querystring = require('querystring');
 const _ = require('underscore');
-const sever = http.createServer();
+// const sever = http.createServer();
+http.createServer(function (req, res) {
 
-//服务监听"request"事件,req为request res为respond
-sever.on("request", (req, res) => {
+    // })
+    //服务监听"request"事件,req为request res为respond
+    // sever.on("request", (req, res) => {
     //封装文件读取并把读取到得数据响应给客户端得函数,并挂载到res对象上
-    res.render = function (filename) {
+    res.render = function (filename, tplData) {
         fs.readFile(filename, function (err, data) {
             if (err) {
-                res.end('文件不存在 404');
-            } else {
-                res.setHeader('Content-Type', mime.getType(filename));
-                res.end(data)
+                res.writeHead(404, 'Not Found', { 'Content-Type': 'text/html;charset=utf-8' })
+                res.end('404 Not Found');
+                return;
             }
+            //如果用户传递了模板数据,那么使用underscore 的template方法进行替换
+            if (tplData) {
+                var fn = _.template(data.toString('utf8'));
+                data = fn(tplData);
+            }
+            res.setHeader('Content-Type', mime.getType(filename));
+            res.end(data)
+
         }
         )
     }
@@ -30,16 +39,36 @@ sever.on("request", (req, res) => {
     //请求文件的路径以及文件名拼接
     var filename = path.join(publicDir, req.url);
     //urlObj.query.title => /add?title='asdsad'&....
-    if(urlObj.pathname === '/datail.html'){
+    if (urlObj.pathname === '/hotproduct.html') {
         fs.readFile(path.join(__dirname, 'data', 'data.json'), 'utf8', function (err, data) {
             //因为第一次访问json文件本事就不存在,所以判断读取失败抛出的异常不需要抛出
             if (err && err.code !== 'ENOENT') { throw err }
             //如果读取到文件中的数据则转化为数组对象,如果没有数据则返回[]
-            var list = JSON.parse(data || "[]");
-            res.render(filename);
+            var list_products = JSON.parse(data || '[]');
+            // console.log(list_products.lenght+"------获取不到undefind")
+            res.render(filename, {list: list_products });
         });
-    //当使用get方法提交数据
-    }else if (urlObj.pathname === '/add' && req.method === 'get') {
+        //当使用get方法提交数据
+    } else if (urlObj.pathname === '/detail.html') {
+        fs.readFile(path.join(__dirname, 'data', 'data.json'), 'utf8', function (err, data) {
+            //因为第一次访问json文件本事就不存在,所以判断读取失败抛出的异常不需要抛出
+            if (err && err.code !== 'ENOENT') { throw err }
+            //如果读取到文件中的数据则转化为数组对象,如果没有数据则返回[]
+            var list_products = JSON.parse(data || '[]');
+            var model = null;
+            for (var i = 0; i < list_products.length; i++) {
+                if (list_products[i].id.toString() == urlObj.query.id) {
+                    model = list_products[i];
+                    break;
+                }
+            }
+            if (model) {
+                res.render(path.join(__dirname,'detail.html'), {item: model});
+            } else {
+                res.end('No Such Item');
+            }
+        });
+    } else if (urlObj.pathname === '/add' && req.method === 'get') {
         fs.readFile(path.join(__dirname, 'data', 'data.json'), 'utf8', function (err, data) {
             //因为第一次访问json文件本事就不存在,所以判断读取失败抛出的异常不需要抛出
             if (err && err.code !== 'ENOENT') { throw err }
