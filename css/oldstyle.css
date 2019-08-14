@@ -218,14 +218,14 @@ ul{list-style:none;}
 /*公司简介*/
 .about{background: #F9FAFB;}
 .about_h2{text-align: center; font-size:26px; color:#000; margin-top:50px;letter-spacing:8px;}
-.about_h2 span{color: #01af63;}
+.about_h2 span{color: #9E9E9E;}
 .about_line{padding: 3px 0px; background: url(../images/about_line.png) center center no-repeat;}
 .about_p{text-align: center;  color: #c3c3c3; font-size:16px; text-transform: uppercase;padding:0px;padding-left: -6px;}
 .about_contents{color:#2F2F2F;  line-height:31px; padding:5px 0px 10px 0px;}
 a.about_more{ display: block; margin: 0 auto; width: 130px; text-align: center; color:#01af63; padding: 10px 0px; background: #fff; border:1px solid #01af63; margin-bottom:20px;}
 a.about_more:hover{color: #fff; background: #01af63; text-decoration: none;}
 .mouse_img{width: 33px; height: 46px; margin: 0 auto; background: url(../images/mouse.png) no-repeat center center; position: relative; top: 23px; z-index: 99px;}
-.about_contents span{color: aqua;}
+.about_contents span{color: #9E9E9E;font-weight: bolder}
 
 /* 产品展示 */
 .cp_banner {width: 100%;overflow: hidden;position: relative}
