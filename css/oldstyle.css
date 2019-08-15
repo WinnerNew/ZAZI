@@ -278,7 +278,7 @@ a.about_more:hover{color: #fff; background: #01af63; text-decoration: none;}
 
 .index_3 { padding: 16.1% 0; overflow: hidden; background: no-repeat center; background-size: cover; }
 .index_3 .wrap { position: relative; }
-.index_3 .wrap > a { display: block; position: absolute; top: 50%; left: 200px; width: 339px; height: 331px; margin-top: -160px; background: no-repeat center; background-size: cover; line-height: 331px; font-size: 0; }
+.index_3 .wrap > a { display: block; position: absolute; top: 50%; left: 200px; width: 35%; height: 331px; margin-top: -160px; background: no-repeat center; background-size: cover; line-height: 331px; font-size: 0; }
 .index_3 .wrap > a > div { display: inline-block; width: 100%; vertical-align: middle; text-align: center; line-height: 1; }
 .index_3 .wrap > a > div h4 { font-size: 14px; color: #485668; }
 .index_3 .wrap > a > div h5 { position: relative; margin-bottom: 20px; padding: 25px 0; font-size: 24px; color: #485668; }
