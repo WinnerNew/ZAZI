@@ -315,8 +315,8 @@
         <script src="assets/jquery/dist/jquery.min.js"></script>
         <script src="assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
         <script src="assets/swiper/swiper.min.js"></script>
-        <script src="js/index.js"></script>
-        <script src="js/dod.min.js"></script>
+        <!-- <script src="js/index.js"></script> -->
+        <!-- <script src="js/dod.min.js"></script> -->
         <script src="js/js.js"></script>
         <script type="text/javascript">
         </script>
@@ -367,51 +367,51 @@
                 },
             });
 
-            $(function () {
-                $(".nav li").hover(function () {
-                    $(this).siblings('li').removeClass('active'); // 删除其兄弟元素的样式
-                    $(this).addClass('active'); // 为点击元素添加类名
-                });
-                $(".nav li").mouseleave(function () {
-                    $(this).removeClass('active'); // 删除其兄弟元素的样式
-                    // $(this).addClass('active'); // 为点击元素添加类名
-                    // $(.nav li:first-child).addClass("active");
-                });
-            });
+            // $(function () {
+            //     $(".nav li").hover(function () {
+            //         $(this).siblings('li').removeClass('active'); // 删除其兄弟元素的样式
+            //         $(this).addClass('active'); // 为点击元素添加类名
+            //     });
+            //     $(".nav li").mouseleave(function () {
+            //         $(this).removeClass('active'); // 删除其兄弟元素的样式
+            //         // $(this).addClass('active'); // 为点击元素添加类名
+            //         // $(.nav li:first-child).addClass("active");
+            //     });
+            // });
         </script>
         <script>
-            function animatel() {
-                var tamp = $(".cp_ul").position().left;
-                tamp = tamp + $(".cp_li").outerWidth(true);
-                if (tamp >= 0) {
-                    $(".cp_ul").css("left", "0px");
-                } else if (tamp <= -700) {
-                    $(".cp_ul").css("left", "-700px");
-                } else {
-                    $(".cp_ul").css("left", tamp + "px");
-                    console.log("移动:" + tamp + " " + "left:" + $(".cp_ul").position().left + "px");
-                }
-            }
+            // function animatel() {
+            //     var tamp = $(".cp_ul").position().left;
+            //     tamp = tamp + $(".cp_li").outerWidth(true);
+            //     if (tamp >= 0) {
+            //         $(".cp_ul").css("left", "0px");
+            //     } else if (tamp <= -700) {
+            //         $(".cp_ul").css("left", "-700px");
+            //     } else {
+            //         $(".cp_ul").css("left", tamp + "px");
+            //         console.log("移动:" + tamp + " " + "left:" + $(".cp_ul").position().left + "px");
+            //     }
+            // }
 
-            function animater() {
-                var tamp = $(".cp_ul").position().left;
-                tamp = tamp - $(".cp_li").outerWidth(true);
-                if (tamp >= 0) {
-                    $(".cp_ul").css("left", "0px");
-                } else if (tamp <= -700) {
-                    $(".cp_ul").css("left", "-700px");
-                } else {
-                    $(".cp_ul").css("left", tamp + "px");
-                    // console.log(tamp);
-                }
-            }
-            $(".glyphicon-menu-right").click(function () {
-                animater();
-            })
-            $("span.glyphicon-menu-left").click(function () {
-                animatel();
-            })
-            setInterval(animater(), 1000);
+            // function animater() {
+            //     var tamp = $(".cp_ul").position().left;
+            //     tamp = tamp - $(".cp_li").outerWidth(true);
+            //     if (tamp >= 0) {
+            //         $(".cp_ul").css("left", "0px");
+            //     } else if (tamp <= -700) {
+            //         $(".cp_ul").css("left", "-700px");
+            //     } else {
+            //         $(".cp_ul").css("left", tamp + "px");
+            //         // console.log(tamp);
+            //     }
+            // }
+            // $(".glyphicon-menu-right").click(function () {
+            //     animater();
+            // })
+            // $("span.glyphicon-menu-left").click(function () {
+            //     animatel();
+            // })
+            // setInterval(animater(), 1000);
         </script>
 </body>
 
